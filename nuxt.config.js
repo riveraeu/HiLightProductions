@@ -42,8 +42,10 @@ module.exports = {
     }
   },
   env: {
+    NPM_CONFIG_PRODUCTION: false,
+    NODE_ENV: 'production',
+    HOST: '0.0.0.0',
     COSMIC_BUCKET: process.env.COSMIC_BUCKET || 'hilightproductions',
-    COSMIC_READ_KEY: process.env.COSMIC_READ_KEY,
-    STRIPE_PUBLIC_KEY: process.env.STRIPE_PUBLIC_KEY
+    COSMIC_READ_KEY: process.env.COSMIC_READ_KEY
   }
 }
