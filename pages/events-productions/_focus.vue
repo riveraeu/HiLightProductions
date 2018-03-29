@@ -2,13 +2,14 @@
   <v-container>
     <v-layout class="pb-5" justify-center row>
       <v-flex xs8>
+        test
         <heading :header="eventProduction[0].header" :subHeader="eventProduction[0].subHeader"/>
         <div class="body-text"> {{ eventProduction[1].text }}</div>
       </v-flex>
     </v-layout>
     <div class="cards">
       <div class="card" v-for="(image, index) in images" :key="index">
-        <img :src="image.src" :alt="index" v-on:click="openGallery(index)">
+        <img v-lazy="image.src" :alt="index" v-on:click="openGallery(index)">
       </div>
       <lightbox :images="images" ref="lightbox" :show-light-box="false" :show-thumbs="false"/>
     </div>
