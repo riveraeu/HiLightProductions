@@ -120,7 +120,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"NPM_CONFIG_PRODUCTION":false,"NODE_ENV":"production","HOST":"0.0.0.0","COSMIC_BUCKET":"hilightproductions"}
+      env: {"COSMIC_BUCKET":"hilightproductions"}
     }
     // Only set once
     if (context.req) app.context.req = context.req

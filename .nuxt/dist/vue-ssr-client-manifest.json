@@ -11,7 +11,7 @@
     "pages/index.d54f8d1eed0d85e7987e.js",
     "pages/events-productions/gallery.0fc0b98c2784822e84e2.js",
     "pages/lights/rentals/cart.d5e9c45a96843484f712.js",
-    "pages/events-productions/_focus.cdf26c6744815ba6e5e8.js",
+    "pages/events-productions/_focus.d664f9a1ead60774ac7d.js",
     "pages/about.33634d9aa8d27975935f.js",
     "pages/lights/rentals/store.270c33403c9ad9491ab4.js",
     "img/headshot.daf19a8.jpg",
@@ -21,24 +21,24 @@
     "pages/lights/services.27957857df5e3560104c.js",
     "pages/lights/contact.10c72cf463362981c084.js",
     "vendor.2c350a029ff110d359f5.js",
-    "app.c6ff99e3cebbe7afce21.js",
-    "manifest.bbf3b8893eba9e149984.js",
+    "app.4ce173b0071138461a7b.js",
+    "manifest.6f13e882157f644edcc7.js",
     "app.7a9f3334b4dda8b61fbca866bfd3f1a5.css",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.bbf3b8893eba9e149984.js",
+    "manifest.6f13e882157f644edcc7.js",
     "vendor.2c350a029ff110d359f5.js",
-    "app.c6ff99e3cebbe7afce21.js"
+    "app.4ce173b0071138461a7b.js"
   ],
   "async": [
     "pages/lights/rentals/instructions.8a4338dd2b8704e16041.js",
     "pages/index.d54f8d1eed0d85e7987e.js",
     "pages/events-productions/gallery.0fc0b98c2784822e84e2.js",
     "pages/lights/rentals/cart.d5e9c45a96843484f712.js",
-    "pages/events-productions/_focus.cdf26c6744815ba6e5e8.js",
+    "pages/events-productions/_focus.d664f9a1ead60774ac7d.js",
     "pages/about.33634d9aa8d27975935f.js",
     "pages/lights/rentals/store.270c33403c9ad9491ab4.js",
     "pages/lights/full-service.9799091622fa2cf4daa1.js",
