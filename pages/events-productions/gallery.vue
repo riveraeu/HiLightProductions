@@ -7,7 +7,7 @@
     </v-layout>
     <v-layout row>
       <overlay title="Heathers" image="/images/events-productions/heathers/heathers0.jpg" path="heathers"/>
-      <overlay title="Events" image="/images/events-productions/events/main.jpg" path="events"/>
+      <overlay title="Events" image="/images/events-productions/events/events0.jpg" path="events"/>
     </v-layout>
     <v-layout row>
       <overlay title="Peter and the Starcatcher" image="/images/events-productions/peter-starcatcher/peter-starcatcher0.jpg" path="peter-starcatcher"/>

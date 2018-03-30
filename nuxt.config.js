@@ -1,8 +1,5 @@
-
 module.exports = {
-  /*
-  ** Headers of the page
-  */
+  // Headers of the page
   head: {
     title: 'Hi Light Productions',
     meta: [
@@ -17,18 +14,11 @@ module.exports = {
   },
   plugins: ['~/plugins/vuetify.js', '~/plugins/lightbox.js'],
   css: ['~/assets/style/app.styl'],
-  /*
-  ** Customize the progress bar color
-  */
+  // Customize the progress bar color
   loading: { color: '#FF9800' },
-  /*
-  ** Build configuration
-  */
+  //Build configuration
   build: {
-    extractCSS: true,
-
     //** Run ESLint on save
-
     extend (config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -39,9 +29,5 @@ module.exports = {
         })
       }
     }
-  },
-  env: {
-    COSMIC_BUCKET: process.env.COSMIC_BUCKET || 'hilightproductions',
-    COSMIC_READ_KEY: process.env.COSMIC_READ_KEY
   }
 }

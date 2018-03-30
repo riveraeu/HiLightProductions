@@ -1,17 +1,17 @@
 <template>
   <v-card>
-   <v-card-media :src="product.metadata.image.imgix_url" height="40vh">
+   <v-card-media :src="product.image" height="40vh">
    </v-card-media>
    <v-card-title primary-title>
      <div>
        <h3 class="grey--text text--darken-1"> {{ product.title }}</h3>
-       <p class="body-text" v-html="product.content"></p>
+       <p class="body-text" v-html="product.description"></p>
      </div>
    </v-card-title>
    <v-card-actions>
-     <v-btn color="primary" @click="addToCart(product)">${{product.metadata.price}} per day - Add to Cart</v-btn>
+     <v-btn color="primary" @click="addToCart(product)">${{product.price}} per day - Add to Cart</v-btn>
    </v-card-actions>
-   <v-snackbar timeout="3000" v-model="snackbar">
+   <v-snackbar :timeout=3000 v-model="snackbar">
       Item added to cart
       <v-btn flat color="primary" to="/lights/rentals/cart">View Cart</v-btn>
     </v-snackbar>
@@ -30,7 +30,7 @@ export default {
   methods: {
     addToCart (item) {
       this.snackbar = true
-      this.$store.commit('addToCart', item)
+      this.$store.commit('rentals/addToCart', item)
     }
   }
 }

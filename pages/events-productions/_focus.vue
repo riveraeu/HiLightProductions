@@ -18,6 +18,7 @@
 <script>
 import heading from '~/components/globals/heading.vue'
 import lightbox from 'vue-image-lightbox'
+
 require('vue-image-lightbox/dist/vue-image-lightbox.min.css')
 
 export default {
@@ -36,17 +37,30 @@ export default {
     }
   },
   computed: {
+    // this is not going to scale well
     eventProduction () {
-      return this.$store.getters.getEventProduction(this.$route.params.focus)
+      if (this.name === 'heathers') {
+        return this.$store.state.eventsProductions.heathers
+      } else if (this.name === 'events') {
+        return this.$store.state.eventsProductions.events
+      } else {
+        return this.$store.state.eventsProductions.peterStarcatcher
+      }
     },
     images () {
-      return this.$store.getters.getImages(this.$route.params.focus)
+      if (this.name === 'heathers') {
+        return this.$store.state.eventsProductions.heatherImages
+      } else if (this.name === 'events') {
+        return this.$store.state.eventsProductions.eventImages
+      } else {
+        return this.$store.state.eventsProductions.peterStarcatcherImages
+      }
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .cards {
   column-count: 3;
   column-gap: 1em;

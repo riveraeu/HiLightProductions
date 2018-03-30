@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .heading {
   padding: 50px 5% 25px 5%;
 }

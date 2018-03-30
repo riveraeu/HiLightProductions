@@ -28,10 +28,10 @@
 export default {
   computed: {
     cartTotal () {
-      return this.$store.state.cartTotal
+      return this.$store.state.rentals.cartTotal
     },
     showCart () {
-      return this.$store.state.showCart
+      return this.$store.state.rentals.showCart
     }
   }
 }
