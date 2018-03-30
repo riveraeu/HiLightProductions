@@ -5,6 +5,11 @@
         <heading header="Cart" subHeader="Review your cart items and proceed to checkout when ready"/>
       </v-flex>
     </v-layout>
+    <v-layout justify-center class="body-text title" v-if="cartTotal == 0">
+      <v-flex class="body-text title" xs2>
+        Your cart is empty
+      </v-flex>
+    </v-layout>
     <div class="cart-row mt-5" v-for="product in cart" :key="product._id">
       <v-layout justify-center row>
         <v-flex xs2>
@@ -44,6 +49,9 @@ export default {
     }
   },
   computed: {
+    cartTotal () {
+      return this.$store.state.cartTotal
+    },
     cart () {
       return this.$store.getters.cart
     },

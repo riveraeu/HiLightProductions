@@ -1,7 +1,7 @@
 <template>
   <v-flex v-on:mouseover="active = true" v-on:mouseleave="active = false" class="box" text-xs-center xs6>
     <nuxt-link :to="'/events-productions/'+path">
-      <img :src="image" :alt="path">
+      <img v-lazy="image" :alt="path">
       <div v-show="active" class="image-overlay">
         <h3 class="image-title sub-header display-1"> {{ title }}</h3>
       </div>

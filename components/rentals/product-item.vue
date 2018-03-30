@@ -11,7 +11,7 @@
    <v-card-actions>
      <v-btn color="primary" @click="addToCart(product)">${{product.metadata.price}} per day - Add to Cart</v-btn>
    </v-card-actions>
-   <v-snackbar v-model="snackbar">
+   <v-snackbar timeout="3000" v-model="snackbar">
       Item added to cart
       <v-btn flat color="primary" to="/lights/rentals/cart">View Cart</v-btn>
     </v-snackbar>
