@@ -25,7 +25,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vuetify', 'vue-image-lightbox'],
     extractCSS: true,
 
     //** Run ESLint on save
