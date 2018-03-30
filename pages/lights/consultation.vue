@@ -7,7 +7,7 @@
     </v-layout>
     <v-layout justify-center row>
       <v-flex xs1>
-        <img src="~/assets/images/lights/consultation/ideas.svg" alt="ideas">
+        <img src="/images/lights/consultation/ideas.svg" alt="ideas">
       </v-flex>
       <v-flex xs8>
         <div class="body-text mt-5 ml-5 mb-5">
@@ -22,7 +22,7 @@
         </div>
       </v-flex>
       <v-flex xs1>
-        <img src="~/assets/images/lights/consultation/lights.svg" alt="lights">
+        <img src="/images/lights/consultation/lights.svg" alt="lights">
       </v-flex>
     </v-layout>
     <v-layout>

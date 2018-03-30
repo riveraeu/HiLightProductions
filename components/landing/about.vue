@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout>
       <v-flex xs6>
-        <img src="~/assets/images/about/headshot.jpg" alt="headshot">
+        <img src="/images/about/headshot.jpg" alt="headshot">
       </v-flex>
       <v-flex xs6 text-xs-center >
         <heading header="About" subHeader="Founder of Hi Light Productions Harrison Moye"/>

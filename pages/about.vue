@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row class="mt-5">
       <v-flex xs6>
-        <img src="~/assets/images/about/headshot.jpg" alt="headshot">
+        <img src="/images/about/headshot.jpg" alt="headshot">
       </v-flex>
       <v-flex xs6 text-xs-center >
         <heading header="About" subHeader="Founder of Hi Light Productions Harrison Moye"/>
@@ -11,13 +11,13 @@
     </v-layout>
     <v-layout justify-center row class="mt-5">
       <v-flex xs2>
-        <img src="~/assets/images/about/award.svg" alt="certificate">
+        <img src="/images/about/award.svg" alt="certificate">
       </v-flex>
       <v-flex xs8>
         <div class="body-text pl-5 pr-5"> {{ text2 }}</div>
       </v-flex>
       <v-flex xs2>
-        <img src="~/assets/images/about/cup.svg" alt="trophy">
+        <img src="/images/about/cup.svg" alt="trophy">
       </v-flex>
     </v-layout>
   </v-container>

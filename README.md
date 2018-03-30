@@ -1,10 +1,5 @@
-# nuxt-vuetify
-
-> Nuxt.js + Vuetify.js project
-
 ## Build Setup
 
-``` bash
 # install dependencies
 $ npm install # Or yarn install
 
@@ -17,6 +12,3 @@ $ npm start
 
 # generate static project
 $ npm run generate
-```
-
-For detailed explanation on how things work, check out the [Nuxt.js](https://github.com/nuxt/nuxt.js) and [Vuetify.js](https://vuetifyjs.com/) documentation.

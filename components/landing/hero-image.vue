@@ -1,5 +1,5 @@
 <template>
-  <v-jumbotron :src="require('@/assets/images/temp-hero-image.jpg')" height="100vh">
+  <v-jumbotron :src="'/images/temp-hero-image.jpg'" height="100vh">
     <v-container fill-height>
       <v-layout>
         <v-flex text-xs-center class="mt-5">
