@@ -1,12 +1,12 @@
 <template>
   <v-container fluid>
-    <v-layout>
-      <v-flex xs6>
+    <v-layout row wrap>
+      <v-flex md6>
         <img src="/images/about/headshot.jpg" alt="headshot">
       </v-flex>
-      <v-flex xs6 text-xs-center >
+      <v-flex md6 text-xs-center >
         <heading header="About" subHeader="Founder of Hi Light Productions Harrison Moye"/>
-        <div class="body-text ml-5 mr-5"> {{ about }}</div>
+        <div class="body-text mar-left mar-right"> {{ about }}</div>
         <v-btn class="mt-5" color="orange" dark to="/about">Read More</v-btn>
       </v-flex>
     </v-layout>

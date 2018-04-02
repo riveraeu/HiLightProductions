@@ -45,6 +45,14 @@ img {
   font-family: Impact, fantasy;
 }
 
+/* Spacing */
+.mar-left{
+  margin-left: 5%;
+}
+
+.mar-right{
+  margin-right: 5%;
+}
 
 .sub-header{
   color: #1DE9B6;

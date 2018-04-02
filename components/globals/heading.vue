@@ -1,5 +1,5 @@
 <template>
-  <v-flex text-xs-center class="heading mr-5 ml-5">
+  <v-flex text-xs-center class="heading">
     <h3 class="primary--text lato line display-3"> {{ header }}</h3>
     <h3 class="sub-header display-1"> {{ subHeader }}</h3>
   </v-flex>

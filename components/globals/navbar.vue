@@ -1,31 +1,60 @@
 <template>
-  <v-toolbar fixed app>
-    <v-toolbar-items class="ml-0">
-      <v-btn flat to="/" color="grey">
-        <v-icon >highlight</v-icon>
-        <v-toolbar-title class="impact primary--text">Hi Light Productions</v-toolbar-title>
-      </v-btn>
-    </v-toolbar-items>
-    <v-spacer/></v-spacer>
-    <v-toolbar-items class="mr-0">
-      <v-btn flat to='/lights/services' color="grey">
-        <v-icon left>lightbulb_outline</v-icon>Lights</v-btn>
-      <v-btn flat to="/events-productions/gallery" color="grey">
-        <v-icon left>wb_incandescent</v-icon>Events & Productions</v-btn>
-      <v-btn flat to='/about' color="grey">
-        <v-icon left>face</v-icon>About</v-btn>
-      <v-btn v-show="showCart" flat to="/lights/rentals/cart">
-        <v-badge right overlap>
+  <div class="">
+    <v-toolbar fixed app>
+      <v-toolbar-side-icon class="hidden-md-and-up grey--text" v-on:click="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-items class="ml-0">
+        <v-btn flat to="/" color="grey">
+          <v-icon >highlight</v-icon>
+          <v-toolbar-title class="impact primary--text">Hi Light Productions</v-toolbar-title>
+        </v-btn>
+      </v-toolbar-items>
+      <v-spacer/></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down mr-0">
+        <v-btn flat v-for="(link, index) in navigation" :key="index" :to="link.to" color="grey">
+          <v-icon left>{{link.icon}}</v-icon>{{link.title}}</v-btn>
+        <v-btn v-show="showCart" flat to="/lights/rentals/cart">
+          <v-badge right overlap>
+            <span slot="badge">{{ cartTotal }}</span>
+            <v-icon large color="grey">shopping_cart</v-icon>
+          </v-badge>
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+    <v-navigation-drawer temporary v-model="drawer" absolute>
+      <v-btn class="mt-3" v-show="showCart" flat to="/lights/rentals/cart">
+        <v-badge overlap>
           <span slot="badge">{{ cartTotal }}</span>
           <v-icon large color="grey">shopping_cart</v-icon>
         </v-badge>
       </v-btn>
-    </v-toolbar-items>
-  </v-toolbar>
+      <v-divider></v-divider>
+      <div class="" v-for="(link, index) in navigation" :key="index">
+        <v-list-tile color="grey" avatar :to="link.to">
+          <v-list-tile-avatar>
+            <v-icon class="white grey--text">{{link.icon}}</v-icon>
+         </v-list-tile-avatar>
+         <v-list-tile-content>
+           <v-list-tile-title class="title">{{link.title}}</v-list-tile-title>
+         </v-list-tile-content>
+       </v-list-tile>
+       <v-divider></v-divider>
+      </div>
+    </v-navigation-drawer>
+  </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      drawer: false,
+      navigation: [
+        {title: 'Lights', to: '/lights/services', icon: 'lightbulb_outline'},
+        {title: 'Events & Productions', to: '/events-productions/gallery', icon: 'wb_incandescent'},
+        {title: 'About', to: '/about', icon: 'face'}
+      ]
+    }
+  },
   computed: {
     cartTotal () {
       return this.$store.state.rentals.cartTotal

@@ -61,6 +61,9 @@ export default {
 </script>
 
 <style scoped>
+img[lazy=loading] {
+  background-color: black;
+}
 .cards {
   column-count: 3;
   column-gap: 1em;
