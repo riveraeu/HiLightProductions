@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <v-layout class="pb-5" justify-center row>
-      <v-flex xs8>
+      <v-flex md8>
         <heading :header="eventProduction[0].header" :subHeader="eventProduction[0].subHeader"/>
-        <div class="body-text"> {{ eventProduction[1].text }}</div>
+        <div class="body-text mar-left mar-right"> {{ eventProduction[1].text }}</div>
       </v-flex>
     </v-layout>
     <div class="cards">
@@ -74,6 +74,20 @@ img[lazy=loading] {
   transition: all 100ms ease-in-out;
   display: inline-block;
   cursor: pointer;
+}
+@media (max-width: 960px) {
+  .cards {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    column-count: 1;
+  }
+  .card {
+    margin: 0 0 0;
+  }
 }
 img {
   display: block;

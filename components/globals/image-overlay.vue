@@ -1,5 +1,5 @@
 <template>
-  <v-flex v-on:mouseover="active = true" v-on:mouseleave="active = false" class="box" text-xs-center xs6>
+  <v-flex v-on:mouseover="active = true" v-on:mouseleave="active = false" class="box" text-xs-center sm6>
     <nuxt-link :to="'/events-productions/'+path">
       <img :src="image" :alt="path">
       <div v-show="active" class="image-overlay">
