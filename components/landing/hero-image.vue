@@ -1,5 +1,5 @@
 <template>
-  <v-jumbotron :src="'/images/temp-hero-image.jpg'" height="100vh">
+  <v-jumbotron :src="'/images/temp-hero-image.jpg'">
     <v-container fill-height>
       <v-layout>
         <v-flex text-xs-center class="mt-5">
@@ -12,7 +12,13 @@
   </v-jumbotron>
 </template>
 
-<script>
-export default {
+<style scoped>
+.jumbotron {
+  height: 100vh !important;
 }
-</script>
+@media (max-width: 600px) {
+  .jumbotron {
+    height: 90vh !important;;
+  }
+}
+</style>

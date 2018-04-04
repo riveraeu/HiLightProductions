@@ -1,23 +1,23 @@
 <template>
   <v-container>
-    <v-layout row class="mt-5">
-      <v-flex xs6>
+    <v-layout row wrap class="mt-5">
+      <v-flex sm6>
         <img src="/images/about/headshot.jpg" alt="headshot">
       </v-flex>
-      <v-flex xs6 text-xs-center >
+      <v-flex sm6 text-xs-center >
         <heading header="About" subHeader="Founder of Hi Light Productions Harrison Moye"/>
-        <div class="body-text pl-5 pr-5"> {{ text1 }}</div>
+        <div class="body-text mar-left mar-right"> {{ text1 }}</div>
       </v-flex>
     </v-layout>
-    <v-layout justify-center row class="mt-5">
+    <v-layout justify-center row wrap class="mt-5">
       <v-flex xs2>
-        <img src="/images/about/award.svg" alt="certificate">
+        <img class="icon" src="/images/about/award.svg" alt="certificate">
       </v-flex>
-      <v-flex xs8>
-        <div class="body-text pl-5 pr-5"> {{ text2 }}</div>
+      <v-flex sm8>
+        <div class="body-text mar-left mar-right"> {{ text2 }}</div>
       </v-flex>
       <v-flex xs2>
-        <img src="/images/about/cup.svg" alt="trophy">
+        <img class="icon" src="/images/about/cup.svg" alt="trophy">
       </v-flex>
     </v-layout>
   </v-container>
@@ -37,3 +37,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@media query {
+
+}
+</style>

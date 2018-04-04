@@ -20,7 +20,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer temporary v-model="drawer" absolute>
+    <v-navigation-drawer temporary v-model="drawer" fixed>
       <v-btn class="mt-3" v-show="showCart" flat to="/lights/rentals/cart">
         <v-badge overlap>
           <span slot="badge">{{ cartTotal }}</span>

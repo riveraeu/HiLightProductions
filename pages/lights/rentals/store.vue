@@ -1,12 +1,12 @@
 <template>
   <v-container grid-list-lg>
-    <v-layout row justify-center>
-      <v-flex xs8>
+    <v-layout row wrap justify-center>
+      <v-flex sm8>
         <heading header="Rentals" subHeader="We offer packages to fit your event size, and individual lights"/>
       </v-flex>
     </v-layout>
     <v-layout row wrap>
-      <v-flex v-for="product in products" :key="product._id" xs4>
+      <v-flex v-for="product in products" :key="product._id" sm4>
         <product-item :product="product"></product-item>
       </v-flex>
     </v-layout>

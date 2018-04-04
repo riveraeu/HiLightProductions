@@ -77,17 +77,17 @@ export const mutations = {
   },
   addToCart (state, item) {
     state.cartTotal++
-    if (item.slug in state.cart) {
-      state.cart[item.slug].count++
+    if (item.title in state.cart) {
+      state.cart[item.title].count++
     } else {
       let stateItem = Object.assign({}, item)
       stateItem.count = 1
-      state.cart[item.slug] = stateItem
+      state.cart[item.title] = stateItem
     }
   },
   removeItem (state, item) {
     state.cartTotal -= item.count
-    Vue.delete(state.cart, item.slug)
+    Vue.delete(state.cart, item.title)
   },
   showCart (state) {
     if (!state.showCart) {

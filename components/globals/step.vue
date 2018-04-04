@@ -1,11 +1,11 @@
 <template>
-  <v-layout justify-center row class="mt-5">
-    <v-flex xs8>
+  <v-layout justify-center wrap row class="mt-5">
+    <v-flex class="text" sm8>
       <div class="primary--text display-1">{{ title }}</div>
       <div class="body-text">{{ text }}</div>
     </v-flex>
-    <v-flex xs1>
-      <img class="ml-5" :src="icon" :alt="title">
+    <v-flex sm1>
+      <img :src="icon" :alt="title">
     </v-flex>
   </v-layout>
 </template>
@@ -15,3 +15,21 @@ export default {
   props: ['icon', 'title', 'text']
 }
 </script>
+
+<style scoped>
+img {
+  margin-left: 10%;
+}
+@media (max-width:600px) {
+  .text {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+  img {
+    margin-left: 0;
+    margin-top: 5%;
+    height: 100px;
+  }
+}
+</style>
