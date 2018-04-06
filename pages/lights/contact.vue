@@ -27,7 +27,7 @@
    </v-layout>
    <v-layout justify-center row wrap>
      <v-flex sm1>
-       <v-btn color="primary" to="/">Send</v-btn>
+       <v-btn color="primary" @click="sendMail()">Send</v-btn>
      </v-flex>
    </v-layout>
  </v-container>
@@ -57,7 +57,48 @@ export default {
     ex4: [
       'lights', 'camera', 'action'
     ]
-  })
+  }),
+  methods: {
+    sendMail() {
+      var authOptions = {
+       method: 'POST',
+       url: 'https://hilightproductions-proxy.herokuapp.com/v3/mail/send',
+       data: {
+        "personalizations": [
+          {
+            "to": [
+              {
+                "email": "eugenejrivera@gmail.com",
+                "name": "John Doe"
+              }
+            ],
+            "subject": "Hello, World!"
+          }
+        ],
+        "from": {
+          "email": "sam.smith@example.com",
+          "name": "Sam Smith"
+        },
+        "reply_to": {
+          "email": "sam.smith@example.com",
+          "name": "Sam Smith"
+        },
+        "subject": "Hello, World!",
+        "content": [
+          {
+            "type": "text/html",
+            "value": "<html><p>Hello, world!</p></html>"
+          }
+        ]
+      }
+      };
+      this.$axios(authOptions).then(response => {
+        console.log(response)
+      }, response => {
+        console.log(response)
+      });
+    }
+  }
 }
 </script>
 

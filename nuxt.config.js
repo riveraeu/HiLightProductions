@@ -13,6 +13,7 @@ module.exports = {
     ]
   },
   plugins: ['~/plugins/vuetify.js', '~/plugins/lightbox.js'],
+  modules: ['@nuxtjs/axios'],
   css: ['~/assets/style/app.styl'],
   // Customize the progress bar color
   loading: { color: '#FF9800' },

@@ -1,7 +1,7 @@
 export const state = () => ({
   heathers: [
     {header: 'Heathers', subHeader: 'When pretty girls get ugly, shit goes down.'},
-    {text: 'Lorem ipsum dolor amet copper mug 3 wolf moon chartreuse, poutine umami neutra subway tile af asymmetrical meh scenester banh mi try-hard air plant waistcoat. Austin heirloom street art selvage, fingerstache man braid cold-pressed pop-up. Lorem ipsum dolor amet copper mug 3 wolf moon chartreuse, poutine umami neutra subway tile af asymmetrical meh scenester banh mi try-hard air plant waistcoat.'}
+    {text: 'The story of Veronica Sawyer, a senior at Westerberg High.  She longs to be cool like the clique of it-girls that run Westerberg: the unaffected, unattainable Heathers. So much that her and her new boyfriend, JD, go on a revenge-fueled path of murder.  Written by Laurence O’Keefe and Kevin Murphy. Produced at Marin Summer Theater.'}
   ],
   heatherImages: [
     {src: '/images/events-productions/heathers/heathers0.jpg'},
@@ -50,7 +50,7 @@ export const state = () => ({
   ],
   peterStarcatcher: [
     {header: 'Peter and the Starcatcher', subHeader: 'Peter pan play I guess im not really sure'},
-    {text: 'Lorem ipsum dolor amet copper mug 3 wolf moon chartreuse, poutine umami neutra subway tile af asymmetrical meh scenester banh mi try-hard air plant waistcoat. Austin heirloom street art selvage, fingerstache man braid cold-pressed pop-up.Lorem ipsum dolor amet copper mug 3 wolf moon chartreuse, poutine umami neutra subway tile af asymmetrical meh scenester banh mi try-hard air plant waistcoat.'}
+    {text: 'An adventure on the high seas and on the faraway, Mollusk Island. An orphan boy named Peter and his mysterious new friend, Molly, overcome bands of pirates and thieves in their quest to keep a magical secret safe and save the world from evil. Adapted by Rick Elice. Produced at Marin Onstage.'}
   ],
   peterStarcatcherImages: [
     {src: '/images/events-productions/peter-starcatcher/peter-starcatcher0.jpg'},

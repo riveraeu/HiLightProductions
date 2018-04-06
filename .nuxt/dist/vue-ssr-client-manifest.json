@@ -1,8 +1,8 @@
 {
   "publicPath": "/_nuxt/",
   "all": [
-    "pages/lights/contact.4949e14d1810fdc0aa76.js",
-    "pages/index.dec72d04ed725cd113b4.js",
+    "pages/lights/contact.dc339baaa379adb9eb26.js",
+    "pages/index.c3e0f573d8e1c925a0cb.js",
     "pages/lights/full-service.dcc3b90726c842db8a02.js",
     "pages/lights/rentals/cart.b4958979edcbb5e4d644.js",
     "pages/events-productions/_focus.497033eba5c081df2f02.js",
@@ -13,21 +13,21 @@
     "pages/lights/rentals/instructions.89fc06fea806467373b2.js",
     "pages/lights/consultation.369f8a278c4febaa4718.js",
     "pages/about.e1ecbea1818964c69e14.js",
-    "vendor.7fbb4afb19cbad5edfd6.js",
-    "app.9483bfb3423fe20eba90.js",
-    "manifest.954ff8a678c92280c3bb.js",
+    "vendor.ec7e3fa261c25e80f799.js",
+    "app.c786eb1d818ad605b51d.js",
+    "manifest.aea89efcf68e06851cd7.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.954ff8a678c92280c3bb.js",
-    "vendor.7fbb4afb19cbad5edfd6.js",
-    "app.9483bfb3423fe20eba90.js"
+    "manifest.aea89efcf68e06851cd7.js",
+    "vendor.ec7e3fa261c25e80f799.js",
+    "app.c786eb1d818ad605b51d.js"
   ],
   "async": [
-    "pages/lights/contact.4949e14d1810fdc0aa76.js",
-    "pages/index.dec72d04ed725cd113b4.js",
+    "pages/lights/contact.dc339baaa379adb9eb26.js",
+    "pages/index.c3e0f573d8e1c925a0cb.js",
     "pages/lights/full-service.dcc3b90726c842db8a02.js",
     "pages/lights/rentals/cart.b4958979edcbb5e4d644.js",
     "pages/events-productions/_focus.497033eba5c081df2f02.js",
@@ -115,6 +115,9 @@
     "692fe124": [
       1
     ],
+    "1dd25605": [
+      12
+    ],
     "3e0d52b0": [
       3
     ],
@@ -154,6 +157,9 @@
     "689f44f2": [
       12
     ],
+    "197aeab6": [
+      12
+    ],
     "72d700cd": [
       7
     ],
@@ -161,6 +167,9 @@
       0
     ],
     "78f03efd": [
+      12
+    ],
+    "6a158a17": [
       12
     ],
     "b602d962": [
@@ -223,6 +232,9 @@
     "3f534b22": [
       12
     ],
+    "4cf700ba": [
+      12
+    ],
     "4dbbf288": [
       12
     ],
@@ -250,11 +262,17 @@
     "8af65eda": [
       12
     ],
+    "bf0e8b1c": [
+      12
+    ],
     "9c6b2f02": [
       9
     ],
     "8f5dff9c": [
       5
+    ],
+    "76868d59": [
+      12
     ],
     "32b3db18": [
       1
@@ -283,8 +301,14 @@
     "85b57370": [
       13
     ],
+    "1bf09887": [
+      12
+    ],
     "f009f54a": [
       5
+    ],
+    "4aad1b5c": [
+      12
     ],
     "2789daf8": [
       6
@@ -403,6 +427,9 @@
     "1da1a1cd": [
       12
     ],
+    "e8512952": [
+      12
+    ],
     "6ba87bf4": [
       12
     ],
@@ -429,6 +456,9 @@
     ],
     "113c8bba": [
       13
+    ],
+    "d9d6d4b0": [
+      12
     ],
     "0b5ade08": [
       12
@@ -475,6 +505,9 @@
     "4f596e08": [
       12
     ],
+    "46b5f588": [
+      12
+    ],
     "cc57e5d8": [
       12
     ],
@@ -505,10 +538,16 @@
     "1794d323": [
       10
     ],
+    "6de463e2": [
+      12
+    ],
     "82d64eb2": [
       13
     ],
     "0e916dee": [
+      12
+    ],
+    "2a182af8": [
       12
     ],
     "28e8d489": [
@@ -520,10 +559,16 @@
     "70d4a148": [
       7
     ],
+    "73afecfc": [
+      12
+    ],
     "b1cb3b0a": [
       12
     ],
     "5978e77d": [
+      12
+    ],
+    "07278d9e": [
       12
     ],
     "7137d904": [
@@ -563,6 +608,9 @@
       12
     ],
     "0b9bedee": [
+      12
+    ],
+    "f294c270": [
       12
     ],
     "50ab655d": [
@@ -655,6 +703,9 @@
     "66758b69": [
       12
     ],
+    "1cd4d984": [
+      12
+    ],
     "e6736108": [
       13
     ],
@@ -673,11 +724,20 @@
     "54f6584c": [
       8
     ],
+    "2f2ed2b1": [
+      12
+    ],
     "6a762d9a": [
       10
     ],
+    "0fdecdfb": [
+      12
+    ],
     "8ac67c16": [
       5
+    ],
+    "1c3cb372": [
+      12
     ],
     "6a088688": [
       12
@@ -685,7 +745,13 @@
     "7a828b7a": [
       8
     ],
+    "69f8f051": [
+      12
+    ],
     "5af1ebca": [
+      12
+    ],
+    "68595bc7": [
       12
     ],
     "5d8044b7": [
@@ -718,22 +784,25 @@
     "9438bb92": [
       13
     ],
+    "4b838a36": [
+      12
+    ],
     "7be72c73": [
       12
     ],
+    "7f39802a": [
+      12
+    ],
     "03eefb3f": [
+      12
+    ],
+    "2ec2a1c0": [
       12
     ],
     "2d9454da": [
       13
     ],
     "6ea08b7e": [
-      12
-    ],
-    "353961f4": [
-      12
-    ],
-    "629e580d": [
       12
     ],
     "6ac420b3": [
@@ -757,7 +826,16 @@
     "557866b0": [
       12
     ],
+    "353961f4": [
+      12
+    ],
     "73300d60": [
+      12
+    ],
+    "b7b317ee": [
+      12
+    ],
+    "629e580d": [
       12
     ],
     "5180dd1a": [
@@ -774,6 +852,9 @@
     ],
     "8d1d45a8": [
       12
+    ],
+    "38880e93": [
+      13
     ]
   }
 }

@@ -21,7 +21,7 @@ export default {
   },
   data () {
     return {
-      about: 'Heirloom hoodie +1 prism, vexillologist whatever sriracha intelligentsia jianbing XOXO shaman mixtape trust fund palo santo pinterest. Tacos copper mug kinfolk tumblr tofu raclette taxidermy. Post-ironic tattooed etsy man braid. Ramps thundercats bitters 90s schlitz copper mug. Tbh migas freegan artisan, next level taiyaki helvetica vegan tofu intelligentsia raclette. Master cleanse vaporware pinterest, seitan four loko direct trade green juice cloud bread lyft kale chips fashion axe mixtape.'
+      about: 'After obtaining his certificate in Technical Theater Craft and Design from Pacific Conservatory Theatre. Harrison returned to the North Bay to continue his passion for working in the arts. He gained experience working for different production and theatre companies around The Bay and got to work in places like The Legion of Honor, The Asian Art Museum, Alcatraz, and The Mondavi Center in Davis. Currently based out of San Rafael, the goal of Hi Light Productions is, to bring thoughtful and affordable production elements to local artists and companies. When art thrives so does the humanity.'
     }
   }
 }
