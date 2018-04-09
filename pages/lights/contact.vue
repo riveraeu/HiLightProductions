@@ -22,7 +22,7 @@
    </v-layout>
    <v-layout row wrap justify-center>
      <v-flex class="input" sm5>
-       <v-text-field color="grey" name="message" label="Please give us some details about your event" textarea></v-text-field>
+       <v-text-field color="grey" name="message" v-model="message" label="Please give us some details about your event" textarea></v-text-field>
      </v-flex>
    </v-layout>
    <v-layout justify-center row wrap>
@@ -54,6 +54,7 @@ export default {
       v => !!v || 'E-mail is required',
       v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
     ],
+    message: '',
     ex4: [
       'lights', 'camera', 'action'
     ]
@@ -61,37 +62,18 @@ export default {
   methods: {
     sendMail() {
       var authOptions = {
-       method: 'POST',
-       url: 'https://hilightproductions-proxy.herokuapp.com/v3/mail/send',
-       data: {
-        "personalizations": [
-          {
-            "to": [
-              {
-                "email": "eugenejrivera@gmail.com",
-                "name": "John Doe"
-              }
-            ],
-            "subject": "Hello, World!"
-          }
-        ],
-        "from": {
-          "email": "sam.smith@example.com",
-          "name": "Sam Smith"
+        method: 'POST',
+         url: 'https://hilightproductions-backend.herokuapp.com/',
+         headers: {
+             'Access-Control-Allow-Origin': '*'
+         },
+         data: {
+           name: this.name,
+           phone: this.phone,
+           email: this.email,
+           message: this.message
         },
-        "reply_to": {
-          "email": "sam.smith@example.com",
-          "name": "Sam Smith"
-        },
-        "subject": "Hello, World!",
-        "content": [
-          {
-            "type": "text/html",
-            "value": "<html><p>Hello, world!</p></html>"
-          }
-        ]
       }
-      };
       this.$axios(authOptions).then(response => {
         console.log(response)
       }, response => {

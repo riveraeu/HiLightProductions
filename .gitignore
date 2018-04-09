@@ -1,0 +1,6 @@
+node_modules/
+Design/
+For Greeno!/
+.eslintrc.js
+npm-debug.log
+package-lock.json
