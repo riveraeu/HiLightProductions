@@ -63,7 +63,7 @@ export default {
     sendMail() {
       var authOptions = {
         method: 'POST',
-         url: 'https://hilightproductions-backend.herokuapp.com/',
+         url: '/send',
          headers: {
              'Access-Control-Allow-Origin': '*'
          },
