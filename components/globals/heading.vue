@@ -1,7 +1,7 @@
 <template>
   <v-flex text-xs-center class="heading">
-    <h3 class="primary--text lato line display-3"> {{ header }}</h3>
-    <h3 class="sub-header display-1"> {{ subHeader }}</h3>
+    <p class="primary--text lato line display-3"> {{ header }}</p>
+    <p class="sub-header display-1"> {{ subHeader }}</p>
   </v-flex>
 </template>
 

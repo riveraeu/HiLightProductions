@@ -60,25 +60,23 @@ export default {
     ]
   }),
   methods: {
-    sendMail() {
+    sendMail () {
       var authOptions = {
         method: 'POST',
-         url: 'https://hilightproductions.herokuapp.com/send',
-         headers: {
-             'Access-Control-Allow-Origin': '*'
-         },
-         data: {
-           name: this.name,
-           phone: this.phone,
-           email: this.email,
-           message: this.message
-        },
+        url: '/lights/contact',
+        headers: {'Access-Control-Allow-Origin': '*'},
+        data: {
+          name: this.name,
+          phone: this.phone,
+          email: this.email,
+          message: this.message
+        }
       }
       this.$axios(authOptions).then(response => {
         console.log(response)
       }, response => {
         console.log(response)
-      });
+      })
     }
   }
 }

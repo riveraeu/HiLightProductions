@@ -43,6 +43,8 @@ export default {
         return this.$store.state.eventsProductions.heathers
       } else if (this.name === 'events') {
         return this.$store.state.eventsProductions.events
+      } else if (this.name === 'rose-in-america') {
+        return this.$store.state.eventsProductions.roseInAmerica
       } else {
         return this.$store.state.eventsProductions.peterStarcatcher
       }
@@ -52,6 +54,8 @@ export default {
         return this.$store.state.eventsProductions.heatherImages
       } else if (this.name === 'events') {
         return this.$store.state.eventsProductions.eventImages
+      } else if (this.name === 'rose-in-america') {
+        return this.$store.state.eventsProductions.roseInAmericaImages
       } else {
         return this.$store.state.eventsProductions.peterStarcatcherImages
       }

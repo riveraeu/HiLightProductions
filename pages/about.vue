@@ -1,25 +1,28 @@
 <template>
   <v-container>
-    <v-layout row wrap class="mt-5">
+    <v-layout row wrap justify-center>
+      <p class="primary--text lato line display-3 mt-5">About</p>
+    </v-layout>
+    <v-layout row wrap>
+      <v-flex md6 text-xs-center >
+        <div class="body-text mar-left mar-right"> {{ aboutCompany }}</div>
+      </v-flex>
+      <v-flex class="mt-5" md6 text-xs-center>
+        <v-icon x-large>highlight</v-icon><span class="impact primary--text display-2">Hi Light Productions</span>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap justify-center>
+      <p class="sub-header display-1 mt-5 mb-5">Founder of Hi Light Productions Harrison Moye</p>
+    </v-layout>
+    <v-layout row wrap>
       <v-flex sm6>
         <img src="/images/about/headshot.jpg" alt="headshot">
       </v-flex>
       <v-flex sm6 text-xs-center >
-        <heading header="About" subHeader="Founder of Hi Light Productions Harrison Moye"/>
-        <div class="body-text mar-left mar-right"> {{ text1 }}</div>
+        <div class="vertical-align-1 body-text mar-left mar-right"> {{ aboutHarrison }}</div>
       </v-flex>
     </v-layout>
-    <v-layout justify-center row wrap class="mt-5">
-      <v-flex xs2>
-        <img class="icon" src="/images/about/award.svg" alt="certificate">
-      </v-flex>
-      <v-flex sm8>
-        <div class="body-text mar-left mar-right"> {{ text2 }}</div>
-      </v-flex>
-      <v-flex xs2>
-        <img class="icon" src="/images/about/cup.svg" alt="trophy">
-      </v-flex>
-    </v-layout>
+
   </v-container>
 </template>
 
@@ -31,15 +34,9 @@ export default {
   },
   data () {
     return {
-      text1: 'Heirloom hoodie +1 prism, vexillologist whatever sriracha intelligentsia jianbing XOXO shaman mixtape trust fund palo santo pinterest. Tacos copper mug kinfolk tumblr tofu raclette taxidermy. Post-ironic tattooed etsy man braid. Ramps thundercats bitters 90s schlitz copper mug. Tbh migas freegan artisan, next level taiyaki helvetica vegan tofu intelligentsia raclette. Master cleanse vaporware pinterest, seitan four loko direct trade green juice cloud bread lyft kale chips fashion axe mixtape.',
-      text2: 'Lorem ipsum dolor amet next level small batch street art knausgaard mustache wolf taxidermy poutine. Quinoa activated charcoal farm-to-table, ennui fixie franzen cornhole meh try-hard post-ironic before they sold out +1 af pop-up tattooed. Etsy mustache brunch, four loko actually chambray vinyl YOLO fashion axe bicycle rights quinoa slow-carb fingerstache letterpress vape. Selvage bespoke taiyaki, dreamcatcher woke air plant bushwick chillwave hashtag normcore iceland pork belly intelligentsia whatever.'
+      aboutCompany: 'HiLight brings quality production and consulting to events and theatre both big and small. Whether you are in need of equipment for a backyard event or consulting and set up for a large scale production, we’ve got you covered. Currently based out of San Rafael, CA, the goal of HiLight Productions is, to bring thoughtful and affordable production elements to local artists and companies. When art thrives so does the humanity.',
+      aboutHarrison: 'After obtaining his certificate in Technical Theater Craft and Design from Pacific Conservatory Theatre. Harrison returned to the North Bay to continue his passion of working in the arts. He gained experience working for different production and theatre companies around The Bay and got to work in places like The Legion of Honor, The Asian Art Museum, Alcatraz, and The Mondavi Center in Davis. He’s excited to bring HiLight to life and bring quality service to the Bay Area!'
     }
   }
 }
 </script>
-
-<style scoped>
-@media query {
-
-}
-</style>

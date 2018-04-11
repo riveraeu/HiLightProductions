@@ -54,6 +54,17 @@ img {
   margin-right: 5%;
 }
 
+.vertical-align-2{
+  margin: 25vh 0;
+}
+
+.vertical-align-1{
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+
+
 .sub-header{
   color: #1DE9B6;
   font-family: 'Lobster', cursive;

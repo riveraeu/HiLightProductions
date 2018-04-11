@@ -11,6 +11,7 @@
     </v-layout>
     <v-layout row wrap>
       <overlay title="Peter and the Starcatcher" image="/images/events-productions/peter-starcatcher/peter-starcatcher0.jpg" path="peter-starcatcher"/>
+      <overlay title="Rose in America" image="/images/events-productions/rose-in-america/rose-in-america0.jpg" path="rose-in-america"/>
     </v-layout>
   </v-container>
 </template>

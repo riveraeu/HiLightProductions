@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-flex md6>
-        <img src="/images/about/headshot.jpg" alt="headshot">
+      <v-flex class="vertical-align-2" md6 text-xs-center>
+        <v-icon x-large>highlight</v-icon><span class="impact primary--text display-2">Hi Light Productions</span>
       </v-flex>
       <v-flex md6 text-xs-center >
-        <heading header="About" subHeader="Founder of Hi Light Productions Harrison Moye"/>
+        <heading header="About" subHeader="HiLightProductions is an event and theater lighting company"/>
         <div class="body-text mar-left mar-right"> {{ about }}</div>
         <v-btn class="mt-5" color="orange" dark to="/about">Read More</v-btn>
       </v-flex>
@@ -21,7 +21,7 @@ export default {
   },
   data () {
     return {
-      about: 'After obtaining his certificate in Technical Theater Craft and Design from Pacific Conservatory Theatre. Harrison returned to the North Bay to continue his passion for working in the arts. He gained experience working for different production and theatre companies around The Bay and got to work in places like The Legion of Honor, The Asian Art Museum, Alcatraz, and The Mondavi Center in Davis. Currently based out of San Rafael, the goal of Hi Light Productions is, to bring thoughtful and affordable production elements to local artists and companies. When art thrives so does the humanity.'
+      about: 'HiLight brings quality production and consulting to events and theatre both big and small. Whether you are in need of equipment for a backyard event or consulting and set up for a large scale production, we’ve got you covered. Currently based out of San Rafael, CA, the goal of HiLight Productions is, to bring thoughtful and affordable production elements to local artists and companies. When art thrives so does the humanity.'
     }
   }
 }

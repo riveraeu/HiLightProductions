@@ -82,5 +82,25 @@ export const state = () => ({
     {src: '/images/events-productions/peter-starcatcher/peter-starcatcher26.jpg'},
     {src: '/images/events-productions/peter-starcatcher/peter-starcatcher27.jpg'},
     {src: '/images/events-productions/peter-starcatcher/peter-starcatcher28.jpg'}
+  ],
+  roseInAmerica: [
+    {header: 'Rose in America', subHeader: 'I think im going to get rid of this sub header'},
+    {text: 'Three Black Ph.D. students attempt to reclaim their own history from a white savior play about the Civil Rights Movement’s Selma March...and have to deal with the complications of a surprisingly still-alive white playwright. A quasi-realistic, semi-serious comedy about sidekicks, interpretative dance, and the collision of four generations of activists. Written by Michelle Carter. Produced at Alter Theater.'}
+  ],
+  roseInAmericaImages: [
+    {src: '/images/events-productions/rose-in-america/rose-in-america0.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america1.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america2.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america3.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america4.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america5.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america6.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america7.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america8.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america9.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america10.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america11.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america12.jpg'},
+    {src: '/images/events-productions/rose-in-america/rose-in-america13.jpg'}
   ]
 })
