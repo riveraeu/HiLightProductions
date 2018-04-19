@@ -1,9 +1,10 @@
 <template>
-  <v-flex v-on:mouseover="active = true" v-on:mouseleave="active = false" class="box" text-xs-center sm6>
-    <nuxt-link :to="'/events-productions/'+path">
-      <img :src="image" :alt="path">
+  <v-flex v-on:mouseover="active = true" v-on:mouseleave="active =
+  false" class="box" sm6 text-xs-center>
+    <nuxt-link :to="{name: 'events-productions-focus', params: eventProd}">
+      <img :src="eventProd.images[0].src" :alt="eventProd.path">
       <div v-show="active" class="image-overlay">
-        <h3 class="image-title sub-header display-1"> {{ title }}</h3>
+        <h3 class="image-title sub-header display-1"> {{ eventProd.title }}</h3>
       </div>
     </nuxt-link>
   </v-flex>
@@ -11,7 +12,7 @@
 
 <script>
 export default {
-  props: ['title', 'image', 'path'],
+  props: ['eventProd'],
   data () {
     return {
       active: false
@@ -31,8 +32,10 @@ export default {
   top: 0;
   left: 0;
   background-color: rgba(38, 50, 56, 0.7);
+  display: table;
 }
 .image-title {
-  padding: 20% 0;
+  display: table-cell;
+  vertical-align: middle;
 }
 </style>

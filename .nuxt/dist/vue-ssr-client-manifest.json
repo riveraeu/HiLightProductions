@@ -2,38 +2,38 @@
   "publicPath": "/_nuxt/",
   "all": [
     "pages/lights/contact.0e388d5fc5ab7efa2b59.js",
-    "pages/index.3fa9a0b90571879ad1f3.js",
+    "pages/index.2e84ba9b56e4a354d4b6.js",
     "pages/lights/full-service.8badfcce97670414ef96.js",
     "pages/lights/rentals/cart.639feb3d0e20c9e3a44e.js",
-    "pages/events-productions/_focus.f27eb1498a988087c3ae.js",
-    "pages/events-productions/gallery.e463d8f2325cb041a9f0.js",
+    "pages/events-productions/_focus.2ceae04708c01299431c.js",
+    "pages/events-productions/gallery.806eed75677c051d70ad.js",
     "pages/lights/rentals/store.5951288693eb4c6158db.js",
-    "layouts/default.3408f5d9b14061c46bda.js",
+    "layouts/default.735b02294cf10526a4f0.js",
     "pages/lights/services.387308bef627e0451ae1.js",
     "pages/lights/rentals/instructions.fc5b3340deceadc5b0a0.js",
     "pages/lights/consultation.97642397a1c14cbff935.js",
     "pages/about.22fcaefa5ac03830fc3a.js",
     "vendor.ec7e3fa261c25e80f799.js",
-    "app.499272421649a28fd863.js",
-    "manifest.d106ef39ea768f56c75d.js",
+    "app.4995b9fb3c58ebdb2af1.js",
+    "manifest.8dc57ac96ae802840ad9.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.d106ef39ea768f56c75d.js",
+    "manifest.8dc57ac96ae802840ad9.js",
     "vendor.ec7e3fa261c25e80f799.js",
-    "app.499272421649a28fd863.js"
+    "app.4995b9fb3c58ebdb2af1.js"
   ],
   "async": [
     "pages/lights/contact.0e388d5fc5ab7efa2b59.js",
-    "pages/index.3fa9a0b90571879ad1f3.js",
+    "pages/index.2e84ba9b56e4a354d4b6.js",
     "pages/lights/full-service.8badfcce97670414ef96.js",
     "pages/lights/rentals/cart.639feb3d0e20c9e3a44e.js",
-    "pages/events-productions/_focus.f27eb1498a988087c3ae.js",
-    "pages/events-productions/gallery.e463d8f2325cb041a9f0.js",
+    "pages/events-productions/_focus.2ceae04708c01299431c.js",
+    "pages/events-productions/gallery.806eed75677c051d70ad.js",
     "pages/lights/rentals/store.5951288693eb4c6158db.js",
-    "layouts/default.3408f5d9b14061c46bda.js",
+    "layouts/default.735b02294cf10526a4f0.js",
     "pages/lights/services.387308bef627e0451ae1.js",
     "pages/lights/rentals/instructions.fc5b3340deceadc5b0a0.js",
     "pages/lights/consultation.97642397a1c14cbff935.js",
@@ -286,6 +286,9 @@
     "7d22c12a": [
       12
     ],
+    "49cea01a": [
+      13
+    ],
     "48b73f51": [
       10
     ],
@@ -315,6 +318,9 @@
     ],
     "5e9c5529": [
       12
+    ],
+    "fe55713c": [
+      13
     ],
     "25fbb8ed": [
       12
@@ -492,6 +498,9 @@
     ],
     "057ada95": [
       12
+    ],
+    "9492c526": [
+      13
     ],
     "5f3e6e3a": [
       13
@@ -715,11 +724,17 @@
     "d3f02a9c": [
       3
     ],
+    "1d0f59c3": [
+      13
+    ],
     "54f6584c": [
       8
     ],
     "2f2ed2b1": [
       12
+    ],
+    "28bb722f": [
+      13
     ],
     "6a762d9a": [
       10
@@ -741,6 +756,9 @@
     ],
     "69f8f051": [
       12
+    ],
+    "64410b44": [
+      13
     ],
     "5af1ebca": [
       12
@@ -829,9 +847,6 @@
     "b7b317ee": [
       12
     ],
-    "629e580d": [
-      12
-    ],
     "5180dd1a": [
       13
     ],
@@ -849,6 +864,9 @@
     ],
     "38880e93": [
       13
+    ],
+    "629e580d": [
+      12
     ]
   }
 }

@@ -7,7 +7,7 @@
         <v-btn class="mt-5 mb-5" color="orange" dark to="/events-productions/gallery">View more</v-btn>
       </v-flex>
       <v-flex md6>
-        <img src="/images/events-productions/heathers/heathers0.jpg" alt="Heathers Production">
+        <img src="/images/heathers0.jpg" alt="Heathers Production">
       </v-flex>
     </v-layout>
   </v-container>

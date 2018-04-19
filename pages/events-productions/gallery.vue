@@ -1,17 +1,13 @@
 <template>
-  <v-container>
-    <v-layout justify-center row>
+  <v-container grid-list-md>
+    <v-layout justify-center text-sm-center row>
       <v-flex sm8>
-        <heading header="Events & Productions" subHeader="Look at all the cool productions and events Hi Light has put on."/>
+        <p class="primary--text lato line display-3 mt-5 mb-5">Events and Productions</p>
+        <!-- <heading header="Events & Productions" subHeader="Look at all the cool productions and events Hi Light has put on."/> -->
       </v-flex>
     </v-layout>
     <v-layout row wrap>
-      <overlay title="Heathers" image="/images/events-productions/heathers/heathers0.jpg" path="heathers"/>
-      <overlay title="Events" image="/images/events-productions/events/events0.jpg" path="events"/>
-    </v-layout>
-    <v-layout row wrap>
-      <overlay title="Peter and the Starcatcher" image="/images/events-productions/peter-starcatcher/peter-starcatcher0.jpg" path="peter-starcatcher"/>
-      <overlay title="Rose in America" image="/images/events-productions/rose-in-america/rose-in-america0.jpg" path="rose-in-america"/>
+      <overlay v-for="(eventProd, index) in eventsProductions" :key="index" :eventProd="eventProd"/>
     </v-layout>
   </v-container>
 </template>
@@ -23,6 +19,11 @@ export default {
   components: {
     heading,
     overlay
+  },
+  computed: {
+    eventsProductions () {
+      return this.$store.state.eventsProductions.eventsProds
+    }
   }
 }
 </script>
