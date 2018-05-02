@@ -12,7 +12,6 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_axios_a59a7304 from 'nuxt_plugin_axios_a59a7304' // Source: ./axios.js
 import nuxt_plugin_vuetify_d6afc2c2 from 'nuxt_plugin_vuetify_d6afc2c2' // Source: ../plugins/vuetify.js
 import nuxt_plugin_lightbox_449b2fac from 'nuxt_plugin_lightbox_449b2fac' // Source: ../plugins/lightbox.js
 
@@ -153,7 +152,6 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_axios_a59a7304 === 'function') await nuxt_plugin_axios_a59a7304(app.context, inject)
   if (typeof nuxt_plugin_vuetify_d6afc2c2 === 'function') await nuxt_plugin_vuetify_d6afc2c2(app.context, inject)
   if (typeof nuxt_plugin_lightbox_449b2fac === 'function') await nuxt_plugin_lightbox_449b2fac(app.context, inject)
   

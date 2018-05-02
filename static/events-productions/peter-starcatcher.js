@@ -1,5 +1,6 @@
 export default {
   'title': 'Peter and the Starcatcher',
+  'path': 'peter-starcatcher',
   'text': 'An adventure on the high seas and on the faraway, Mollusk Island. An orphan boy named Peter and his mysterious new friend, Molly, overcome bands of pirates and thieves in their quest to keep a magical secret safe and save the world from evil. Adapted by Rick Elice. Produced at Marin Onstage.',
   'images': [
     {'src': 'http://res.cloudinary.com/rivera-web-solutions/image/upload/q_auto:low/HiLightProduction/Peter%20and%20the%20Starcatcher/peter-starcatcher0.jpg'},

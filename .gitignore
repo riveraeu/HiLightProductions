@@ -2,5 +2,6 @@ node_modules/
 Design/
 For Greeno!/
 .eslintrc.js
+.env
 npm-debug.log
 package-lock.json

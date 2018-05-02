@@ -7,10 +7,10 @@
       </v-flex>
     </v-layout>
     <div class="cards">
-      <div class="card" v-for="(image, index) in eventProd.images" :key="index">
-        <img v-lazy="image" :alt="index" v-on:click="openGallery(index)">
+      <div class="card" v-for="(image, index) in eventProd" :key="index">
+        <img v-lazy="image.url" :alt="index" v-on:click="openGallery(index)">
       </div>
-      <lightbox :images="eventProd.images" ref="lightbox" :show-light-box="false" :show-thumbs="false"/>
+      <lightbox :images="eventProd" ref="lightbox" :show-light-box="false" :show-thumbs="false"/>
     </div>
   </v-container>
 </template>
@@ -18,56 +18,36 @@
 <script>
 import heading from '~/components/globals/heading.vue'
 import lightbox from 'vue-image-lightbox'
+import axios from 'axios'
 
 require('vue-image-lightbox/dist/vue-image-lightbox.min.css')
 
 export default {
+  data () {
+    return {
+      eventProd: []
+    }
+  },
   components: {
     heading,
     lightbox
-  },
-  data () {
-    return {
-      eventProd: this.$route.params
-    }
   },
   methods: {
     openGallery (index) {
       this.$refs.lightbox.showImage(index)
     }
   },
-  computed: {
-    /* this is not going to scale well
-    eventProduction () {
-      if (this.name === 'heathers') {
-        return this.$store.state.eventsProductions.heathers
-      } else if (this.name === 'events') {
-        return this.$store.state.eventsProductions.events
-      } else if (this.name === 'rose-in-america') {
-        return this.$store.state.eventsProductions.roseInAmerica
-      } else {
-        return this.$store.state.eventsProductions.peterStarcatcher
-      }
-    },
-    images () {
-      if (this.name === 'heathers') {
-        return this.$store.state.eventsProductions.heatherImages
-      } else if (this.name === 'events') {
-        return this.$store.state.eventsProductions.eventImages
-      } else if (this.name === 'rose-in-america') {
-        return this.$store.state.eventsProductions.roseInAmericaImages
-      } else {
-        return this.$store.state.eventsProductions.peterStarcatcherImages
-      }
-    }
-    */
+  asyncData ({ params }) {
+    return axios.get('/api/focus', {params: {tag: params.path}}).then((res) => {
+      return {eventProd: res.data.resources}
+    })
   }
 }
 </script>
 
 <style scoped>
 img[lazy=loading] {
-  background-color: black;
+  background: url('/loading.gif') no-repeat center center;
 }
 .cards {
   column-count: 3;

@@ -113,14 +113,14 @@ export async function setContext(app, context) {
         return process.client
       },
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"cloudName":"rivera-web-solutions","apiKey":"241371439292377","apiSecret":"xJeFn6_7_PJSGSHDLcHJi7FV30c"}
     }
     // Only set once
     if (context.req) app.context.req = context.req

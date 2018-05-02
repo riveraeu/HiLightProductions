@@ -5,21 +5,19 @@
     </v-layout>
     <v-layout row wrap>
       <v-flex md6 text-xs-center >
-        <div class="body-text mar-left mar-right"> {{ aboutCompany }}</div>
+        <div class="body-text mar-left mar-right mb-5"> {{ aboutCompany }}</div>
       </v-flex>
       <v-flex class="mt-5" md6 text-xs-center>
         <v-icon x-large>highlight</v-icon><span class="impact primary--text display-2">Hi Light Productions</span>
       </v-flex>
-    </v-layout>
-    <v-layout row wrap justify-center>
-      <p class="sub-header display-1 mt-5 mb-5">Founder of Hi Light Productions Harrison Moye</p>
     </v-layout>
     <v-layout row wrap>
       <v-flex sm6>
         <img src="/images/about/headshot.jpg" alt="headshot">
       </v-flex>
       <v-flex sm6 text-xs-center >
-        <div class="vertical-align-1 body-text mar-left mar-right"> {{ aboutHarrison }}</div>
+        <p class="sub-header display-1 mt-5">Founder of Hi Light Productions Harrison Moye</p>
+        <div class="body-text mar-left mar-right"> {{ aboutHarrison }}</div>
       </v-flex>
     </v-layout>
 

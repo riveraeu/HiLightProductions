@@ -1,10 +1,10 @@
 <template>
   <v-flex v-on:mouseover="active = true" v-on:mouseleave="active =
   false" class="box" sm6 text-xs-center>
-    <nuxt-link :to="{name: 'events-productions-focus', params: eventProd}">
-      <img :src="eventProd.images[0].src" :alt="eventProd.path">
+    <nuxt-link :to="{name: 'events-productions-focus', params: {focus: eventProd.context.custom.path, eventProd}}">
+      <img :src="eventProd.url" :alt="eventProd.context.custom.path">
       <div v-show="active" class="image-overlay">
-        <h3 class="image-title sub-header display-1"> {{ eventProd.title }}</h3>
+        <h3 class="image-title sub-header display-1"> {{ eventProd.context.custom.title }}</h3>
       </div>
     </nuxt-link>
   </v-flex>
