@@ -1,13 +1,17 @@
 const express = require('express')
 const cloudinary = require('cloudinary')
 
+// For development, take out when deploying
+var dotenv = require('dotenv');
+dotenv.load();
+
 const app = express()
 const router = express.Router()
 
 cloudinary.config({
-  cloud_name: 'rivera-web-solutions',
-  api_key: '241371439292377',
-  api_secret: 'xJeFn6_7_PJSGSHDLcHJi7FV30c'
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET
 })
 
 router.use((req, res) => {
@@ -24,6 +28,6 @@ router.use((req, res) => {
 })
 
 module.exports = {
-    path: '/api',
+    path: '/api/gallery',
     handler: router
 }

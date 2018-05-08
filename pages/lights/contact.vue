@@ -26,15 +26,18 @@
      </v-flex>
    </v-layout>
    <v-layout justify-center row wrap>
-     <v-flex sm1>
-       <v-btn color="primary" @click="sendMail()">Send</v-btn>
-     </v-flex>
+      <v-flex sm1>
+        <v-btn color="primary" @click="sendMail()">Send</v-btn>
+      </v-flex>
+      <v-snackbar :timeout=3000 v-model="snackbar">Email sent!</v-snackbar>
    </v-layout>
  </v-container>
 </template>
 
 <script>
 import heading from '~/components/globals/heading'
+import axios from 'axios'
+
 export default {
   components: {
     heading
@@ -57,26 +60,24 @@ export default {
     message: '',
     ex4: [
       'lights', 'camera', 'action'
-    ]
+    ],
+    snackbar: false
   }),
   methods: {
     sendMail () {
-      var authOptions = {
-        method: 'POST',
-        url: '/lights/contact',
-        headers: {'Access-Control-Allow-Origin': '*'},
-        data: {
-          name: this.name,
-          phone: this.phone,
-          email: this.email,
-          message: this.message
-        }
-      }
-      this.$axios(authOptions).then(response => {
-        console.log(response)
-      }, response => {
-        console.log(response)
+      axios.post('http://localhost:3000/api/mail', {
+        name: this.name,
+        phone: this.phone,
+        email: this.email,
+        message: this.message
       })
+        .then(function (response) {
+          console.log(response)
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+      this.snackbar = true
     }
   }
 }

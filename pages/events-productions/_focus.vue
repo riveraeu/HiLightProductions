@@ -2,8 +2,8 @@
   <v-container>
     <v-layout class="pb-5" text-xs-center justify-center row>
       <v-flex md8>
-        <p class="primary--text lato line display-3 mt-5">{{eventProd.title}}</p>
-        <div class="body-text mar-left mar-right"> {{ eventProd.text }}</div>
+        <p class="primary--text lato line display-3 mt-5">{{this.$route.params.metadata.title}}</p>
+        <div class="body-text mar-left mar-right"> {{this.$route.params.metadata.description}}</div>
       </v-flex>
     </v-layout>
     <div class="cards">
@@ -38,9 +38,13 @@ export default {
     }
   },
   asyncData ({ params }) {
-    return axios.get('/api/focus', {params: {tag: params.path}}).then((res) => {
-      return {eventProd: res.data.resources}
-    })
+    return axios.get('http://localhost:3000/api/focus/' + params.focus)
+      .then((res) => {
+        return {eventProd: res.data.resources}
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 }
 </script>

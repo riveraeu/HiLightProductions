@@ -1,6 +1,10 @@
 const express = require('express')
 const cloudinary = require('cloudinary')
 
+// For development, take out when deploying
+var dotenv = require('dotenv');
+dotenv.load();
+
 const app = express()
 const router = express.Router()
 
@@ -10,13 +14,13 @@ cloudinary.config({
   api_secret: 'xJeFn6_7_PJSGSHDLcHJi7FV30c'
 })
 
-router.use((req, res) => {
+router.get('/:path', (req, res) => {
   Object.setPrototypeOf(req, app.request)
   Object.setPrototypeOf(res, app.response)
   req.res = res
   res.req = req
   var data = {}
-  cloudinary.v2.api.resources_by_tag("gallery", {context: true},
+  cloudinary.v2.api.resources_by_tag(req.params.path, {max_results: 100},
     function(error, result){
       res.send(result)
     }

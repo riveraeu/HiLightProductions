@@ -18,7 +18,6 @@ module.exports = {
   loading: { color: '#FF9800' },
   //Build configuration
   build: {
-    vendor: ['axios'],
     //** Run ESLint on save
     extend (config, ctx) {
       if (ctx.isDev && ctx.isClient) {
@@ -32,11 +31,8 @@ module.exports = {
     }
   },
   serverMiddleware: [
-    '~/api'
-  ],
-  env: {
-    cloudName: process.env.CLOUD_NAME || 'rivera-web-solutions',
-    apiKey: process.env.API_KEY || '241371439292377',
-    apiSecret: process.env.API_SECRET || 'xJeFn6_7_PJSGSHDLcHJi7FV30c'
-}
+    '~/api/gallery',
+    '~/api/focus',
+    '~/api/mail'
+  ]
 }

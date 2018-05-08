@@ -1,8 +1,9 @@
 <template>
   <v-container>
-    <v-layout row wrap justify-center>
+    <v-layout row wrap text-sm-center justify-center>
       <v-flex sm8>
-        <heading header="Lights" subHeader="We offer a variety of products and services to keep it lit."/>
+        <p class="primary--text lato line display-3 mt-5">Lighting Services</p>
+        <p class="body-text mar-left mar-right">{{text}}</p>
       </v-flex>
     </v-layout>
     <v-layout class="mt-5" row wrap justify-center>
@@ -70,6 +71,11 @@
 <script>
 import heading from '~/components/globals/heading.vue'
 export default {
+  data () {
+    return {
+      text: 'Hi Light Productions offers a variety of lighting services to fit all of your needs. Want us to do all the work? Take a look at our full service option. Looking for input from a proffesional, our consulting service may be perfect for you. Know what your doing and just need the lights? We offer lighting rentals, including packages and individual lights.'
+    }
+  },
   components: {
     heading
   }

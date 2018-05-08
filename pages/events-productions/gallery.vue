@@ -28,15 +28,8 @@ export default {
       gallery: []
     }
   },
-  /*
-  computed: {
-    eventsProductions () {
-      return this.$store.state.eventsProductions.eventsProds
-    }
-  },
-  */
   asyncData ({ params }) {
-    return axios.get('/api')
+    return axios.get('http://localhost:3000/api/gallery')
       .then((res) => {
         return {gallery: res.data.resources}
       })
