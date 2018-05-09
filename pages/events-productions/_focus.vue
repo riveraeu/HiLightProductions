@@ -16,9 +16,7 @@
 </template>
 
 <script>
-import heading from '~/components/globals/heading.vue'
 import lightbox from 'vue-image-lightbox'
-import axios from 'axios'
 
 require('vue-image-lightbox/dist/vue-image-lightbox.min.css')
 
@@ -29,7 +27,6 @@ export default {
     }
   },
   components: {
-    heading,
     lightbox
   },
   methods: {
@@ -37,7 +34,10 @@ export default {
       this.$refs.lightbox.showImage(index)
     }
   },
-  asyncData ({ params }) {
+  async asyncData ({ app, params }) {
+    const res = await app.$axios.$get('api/focus/' + params.focus)
+    return {eventProd: res.resources}
+    /*
     return axios.get('http://localhost:3000/api/focus/' + params.focus)
       .then((res) => {
         return {eventProd: res.data.resources}
@@ -45,6 +45,7 @@ export default {
       .catch((error) => {
         console.log(error)
       })
+    */
   }
 }
 </script>

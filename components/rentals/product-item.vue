@@ -1,6 +1,6 @@
 <template>
   <v-card>
-   <v-card-media :src="product.image" height="40vh">
+   <v-card-media :src="product.image" height="30vh" contain>
    </v-card-media>
    <v-card-title primary-title>
      <div>

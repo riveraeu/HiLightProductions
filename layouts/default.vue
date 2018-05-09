@@ -32,7 +32,6 @@ img {
   padding: 0px;
 }
 
-
 .lato {
   font-family: 'Lato', sans-serif;
 }
@@ -47,6 +46,9 @@ img {
 }
 
 /* Spacing */
+.center {
+  text-align: center;
+}
 .mar-left{
   margin-left: 5%;
 }
@@ -64,11 +66,15 @@ img {
   margin-bottom: 15vh;
 }
 
+.grey-darken-1 {
+  color: #757575;
+}
 
-
+/* fonts and colors */
 .sub-header{
   color: #1DE9B6;
   font-family: 'Lobster', cursive;
+  text-align: center;
 }
 .body-text {
   font-size: 18px;

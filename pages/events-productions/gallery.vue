@@ -13,13 +13,10 @@
 </template>
 
 <script>
-import heading from '~/components/globals/heading.vue'
 import overlay from '~/components/globals/image-overlay.vue'
-import axios from 'axios'
 
 export default {
   components: {
-    heading,
     overlay
   },
   data () {
@@ -28,7 +25,10 @@ export default {
       gallery: []
     }
   },
-  asyncData ({ params }) {
+  async asyncData ({ app }) {
+    const res = await app.$axios.$get('api/gallery')
+    return {gallery: res.resources}
+    /*
     return axios.get('http://localhost:3000/api/gallery')
       .then((res) => {
         return {gallery: res.data.resources}
@@ -36,6 +36,7 @@ export default {
       .catch((error) => {
         console.log(error)
       })
+    */
   }
 }
 </script>

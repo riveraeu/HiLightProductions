@@ -14,6 +14,7 @@ module.exports = {
   },
   plugins: ['~/plugins/vuetify.js', '~/plugins/lightbox.js'],
   css: ['~/assets/style/app.styl'],
+  modules: ['@nuxtjs/axios'],
   // Customize the progress bar color
   loading: { color: '#FF9800' },
   //Build configuration
