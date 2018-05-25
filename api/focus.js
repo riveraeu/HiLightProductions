@@ -20,7 +20,7 @@ router.get('/:path', (req, res) => {
   req.res = res
   res.req = req
   var data = {}
-  cloudinary.v2.api.resources_by_tag(req.params.path, {max_results: 100},
+  cloudinary.v2.api.resources_by_tag(req.params.path, {max_results: 100, context: true},
     function(error, result){
       res.send(result)
     }

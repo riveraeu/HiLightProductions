@@ -13,15 +13,13 @@
          <v-text-field prepend-icon="email" color="primary" label="E-mail" v-model="email" :rules="emailRules" required></v-text-field>
        </v-form>
      </v-flex>
-     <v-flex sm4 class="ml-5">
+     <v-flex sm2 class="ml-5">
        <div class="body-text mb-3">Check the boxes below if you would like any addition services.</div>
        <v-checkbox label="lights" v-model="ex4" color="grey" value="lights" hide-details></v-checkbox>
        <v-checkbox label="camera" v-model="ex4" color="secondary" value="camera" hide-details></v-checkbox>
        <v-checkbox label="action" v-model="ex4" color="primary" value="action" hide-details></v-checkbox>
      </v-flex>
-   </v-layout>
-   <v-layout row wrap justify-center>
-     <v-flex class="input" sm5>
+     <v-flex class="input" sm6>
        <v-text-field color="grey" name="message" v-model="message" label="Please give us some details about your event" textarea></v-text-field>
      </v-flex>
    </v-layout>

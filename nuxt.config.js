@@ -1,3 +1,6 @@
+var dotenv = require('dotenv');
+dotenv.load();
+
 module.exports = {
   // Headers of the page
   head: {
@@ -35,5 +38,11 @@ module.exports = {
     '~/api/gallery',
     '~/api/focus',
     '~/api/mail'
-  ]
+  ],
+  axios: {
+    // proxyHeaders: false
+    baseURL: process.env.BASE_URL,
+    browserBaseURL: process.env.BASE_URL,
+    credentials: false
+  }
 }
