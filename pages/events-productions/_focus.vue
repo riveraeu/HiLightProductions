@@ -8,7 +8,7 @@
     </v-layout>
     <div class="cards">
       <div class="card" v-for="(image, index) in eventProd" :key="index">
-        <img v-lazy="image.url" :alt="index" v-on:click="openGallery(index)">
+        <img v-lazy="image.secure_url" :alt="index" v-on:click="openGallery(index)">
       </div>
       <lightbox :images="eventProd" ref="lightbox" :show-light-box="false" :show-thumbs="false"/>
     </div>
