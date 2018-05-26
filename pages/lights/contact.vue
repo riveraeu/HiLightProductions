@@ -7,7 +7,7 @@
     </v-layout>
     <v-layout justify-center row wrap>
       <v-flex class="input" sm4>
-        <v-form v-model="valid">
+        <v-form ref="form" v-model="valid" lazy-validation>
          <v-text-field prepend-icon="face" color="grey" label="Name" v-model="name" :rules="nameRules" required></v-text-field>
          <v-text-field prepend-icon="phone" color="secondary" label="Phone" v-model="phone" :rules="phoneRules" required></v-text-field>
          <v-text-field prepend-icon="email" color="primary" label="E-mail" v-model="email" :rules="emailRules" required></v-text-field>
@@ -15,9 +15,9 @@
      </v-flex>
      <v-flex sm2 class="ml-5">
        <div class="body-text mb-3">Check the boxes below if you would like any addition services.</div>
-       <v-checkbox label="lights" v-model="ex4" color="grey" value="lights" hide-details></v-checkbox>
-       <v-checkbox label="camera" v-model="ex4" color="secondary" value="camera" hide-details></v-checkbox>
-       <v-checkbox label="action" v-model="ex4" color="primary" value="action" hide-details></v-checkbox>
+       <v-checkbox label="lights" v-model="options" color="grey" value="lights" hide-details></v-checkbox>
+       <v-checkbox label="camera" v-model="options" color="secondary" value="camera" hide-details></v-checkbox>
+       <v-checkbox label="action" v-model="options" color="primary" value="action" hide-details></v-checkbox>
      </v-flex>
      <v-flex class="input" sm6>
        <v-text-field color="grey" name="message" v-model="message" label="Please give us some details about your event" textarea></v-text-field>
@@ -25,7 +25,7 @@
    </v-layout>
    <v-layout justify-center row wrap>
       <v-flex sm1>
-        <v-btn color="primary" @click="sendMail()">Send</v-btn>
+        <v-btn :disabled="!valid" color="primary" @click="sendMail()">Send</v-btn>
       </v-flex>
       <v-snackbar :timeout=3000 v-model="snackbar">{{responseMessage}}</v-snackbar>
    </v-layout>
@@ -55,7 +55,7 @@ export default {
       v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
     ],
     message: '',
-    ex4: [
+    options: [
       'lights', 'camera', 'action'
     ],
     snackbar: false,
@@ -63,14 +63,17 @@ export default {
   }),
   methods: {
     async sendMail () {
-      const response = await this.$axios.$post('api/mail', {
-        name: this.name,
-        phone: this.phone,
-        email: this.email,
-        message: this.message
-      })
-      this.responseMessage = response
-      this.snackbar = true
+      if (this.$refs.form.validate()) {
+        const response = await this.$axios.$post('api/mail', {
+          name: this.name,
+          phone: this.phone,
+          email: this.email,
+          options: this.options,
+          message: this.message
+        })
+        this.responseMessage = response
+        this.snackbar = true
+      }
     }
   }
 }

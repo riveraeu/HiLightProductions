@@ -24,6 +24,8 @@ router.post('/', (req, res, next) => {
       <li>Email: ${req.body.email}</li>
       <li>Phone: ${req.body.phone}</li>
     </ul>
+    <h3>Options</h3>
+    <p>${req.body.options}</p>
     <h3>Message</h3>
     <p>${req.body.message}</p>
   `

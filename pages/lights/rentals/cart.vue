@@ -1,8 +1,8 @@
 <template>
   <v-container>
-    <v-layout justify-center row wrap>
+    <v-layout justify-center row wrap text-sm-center>
       <v-flex sm8>
-        <heading header="Cart" subHeader="Review your cart items and proceed to checkout when ready"/>
+        <p class="primary--text lato display-3 mt-5">Cart</p>
       </v-flex>
     </v-layout>
     <v-layout justify-center class="body-text title" v-if="cartTotal == 0">
@@ -26,10 +26,10 @@
       </v-layout>
       <v-divider></v-divider>
     </div>
-    <v-layout class="mt-5 mb-5" justify-center row wrap>
+    <v-layout class="mt-5 mb-5" justify-center row wrap text-sm-center>
       <v-flex class="checkout" sm3>
         <p class="center grey--text text--darken-1 title mb-5">Your Toal is: <span class="primary--text">${{ totalCost }}</span> per day</p>
-        <v-btn color="primary" to="/">Checkout</v-btn>
+        <v-btn color="primary" to="/lights/contact">Checkout</v-btn>
         <v-btn color="secondary" to="/lights/rentals/store">Keep Shopping</v-btn>
       </v-flex>
     </v-layout>
@@ -37,12 +37,7 @@
 </template>
 
 <script>
-
-import heading from '~/components/globals/heading'
 export default {
-  components: {
-    heading
-  },
   data () {
     return {
       success: false
