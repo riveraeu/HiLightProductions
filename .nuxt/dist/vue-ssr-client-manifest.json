@@ -11,16 +11,16 @@
     "pages/lights/rentals/store.36d56443bb708542fefd.js",
     "pages/lights/services.9ec0f20b373cfd8935be.js",
     "vendor.17e83576d112e361db20.js",
-    "app.56b8e3a97cd8d8b29f27.js",
-    "manifest.43b9bf58857b112acb15.js",
+    "app.87d3e8df1db18ae5de20.js",
+    "manifest.c1c4cb5139edbeb68d4b.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.43b9bf58857b112acb15.js",
+    "manifest.c1c4cb5139edbeb68d4b.js",
     "vendor.17e83576d112e361db20.js",
-    "app.56b8e3a97cd8d8b29f27.js"
+    "app.87d3e8df1db18ae5de20.js"
   ],
   "async": [
     "pages/about.2b1e65af5c8fb03b18c8.js",
