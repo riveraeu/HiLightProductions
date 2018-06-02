@@ -1,13 +1,6 @@
 <template>
   <v-container>
-    <v-layout row wrap text-xs-center justify-center>
-      <v-flex sm12>
-        <p class="primary--text lato display-3 mt-5">Lighting Services</p>
-        <p class="body-text mar-left mar-right mb-5">{{text}}</p>
-      </v-flex>
-    </v-layout>
-    <v-divider></v-divider>
-    <p class="grey-darken-1 center abril display-2 mt-5">Full Service</p>
+    <p class="primary--text center abril display-2 mt-5">Full Service</p>
     <v-layout class="mt-5" row wrap text-sm-center justify-center>
       <card icon="/images/lights/full-service/planning.svg" title="Planning" text="This is the first set in the lighting design process. Our expert lighting designer will sit down with you and help to plan the perfect event. From theater productions to parties, we have the knowlege and products to wow your guests."/>
       <card icon="/images/lights/full-service/set-up.svg" title="Set Up" text="The next step in this process is the set up. The profesionals at Hi Light will be there to set up for the event and make sure is working smoothly. You dont have to worry with Hi Light, we are here for you."/>
@@ -17,7 +10,7 @@
       </v-flex>
     </v-layout>
     <v-divider></v-divider>
-    <p class="grey-darken-1 center abril display-2 mt-5">Consultation</p>
+    <p class="primary--text center abril display-2 mt-5">Consultation</p>
     <v-layout justify-center row wrap>
       <v-flex sm1>
         <img src="/images/lights/consultation/ideas.svg" alt="ideas">
@@ -44,7 +37,7 @@
       </v-flex>
     </v-layout>
     <v-divider></v-divider>
-    <p class="grey-darken-1 center abril display-2 mt-5">Rentals</p>
+    <p class="primary--text center abril display-2 mt-5">Rentals</p>
     <v-layout class="mt-5" row wrap text-sm-center justify-center>
       <card icon="/images/lights/rentals/cart.svg" title="Shopping" text="Browse our selection of event lights and packages. Packages are perfect for a standard get together, or you can rent indivudial lights for unique ocasions. Once you have chosen your lights, your request will be sent in for approval."/>
       <card icon="/images/lights/rentals/warehouse.svg" title="Pick Up" text="We work hard to approve your request quickly. Once you have been approved you can pick up the lights from our facsiliate, or we may be able to drop off and pick up the lights from your event. Just let us know what works for you."/>

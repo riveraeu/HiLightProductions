@@ -1,13 +1,13 @@
 <template>
-  <v-container fluid>
+  <v-container class="mt-5" fluid>
     <v-layout row wrap>
       <v-flex class="vertical-align-2" md6 text-xs-center>
         <v-icon x-large>highlight</v-icon><span class="impact primary--text display-2">Hi Light Productions</span>
       </v-flex>
       <v-flex md6 text-xs-center >
-        <heading header="About" subHeader="HiLightProductions is an event and theater lighting company"/>
+        <p class="primary--text center lato display-3 mt-5">About</p>
         <div class="body-text mar-left mar-right"> {{ about }}</div>
-        <v-btn class="mt-5" color="orange" dark to="/about">Read More</v-btn>
+        <!-- <v-btn class="mt-5" color="orange" dark to="/about">Read More</v-btn> -->
       </v-flex>
     </v-layout>
   </v-container>

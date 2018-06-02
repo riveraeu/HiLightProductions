@@ -49,7 +49,7 @@ export default {
     return {
       drawer: false,
       navigation: [
-        {title: 'Lights', to: '/lights/services', icon: 'lightbulb_outline'},
+        {title: 'Services', to: '/lights/services', icon: 'lightbulb_outline'},
         {title: 'Events & Productions', to: '/events-productions/gallery', icon: 'wb_incandescent'},
         {title: 'About', to: '/about', icon: 'face'}
       ]

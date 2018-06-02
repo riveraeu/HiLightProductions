@@ -58,7 +58,7 @@ img {
 }
 
 .vertical-align-2{
-  margin: 25vh 0;
+  margin: 20vh 0;
 }
 
 .vertical-align-1{

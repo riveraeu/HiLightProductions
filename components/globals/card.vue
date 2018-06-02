@@ -5,7 +5,7 @@
       </v-card-media>
       <v-card-title primary-title>
         <v-spacer></v-spacer>
-        <div class="primary--text display-1">{{title}}</div>
+        <div class="grey-darken-1 display-1">{{title}}</div>
         <v-spacer></v-spacer>
       </v-card-title>
       <v-card-text>
