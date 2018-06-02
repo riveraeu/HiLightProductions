@@ -8,7 +8,7 @@
         <div class="body-text mar-left mar-right mb-5"> {{ aboutCompany }}</div>
       </v-flex>
       <v-flex class="mt-5" md5 text-xs-center>
-        <v-icon x-large>highlight</v-icon><span class="impact primary--text display-2">Hi Light Productions</span>
+        <v-icon x-large>highlight</v-icon><span class="teko primary--text display-2">Hi Light Productions</span>
       </v-flex>
     </v-layout>
     <v-layout row wrap>

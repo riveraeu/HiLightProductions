@@ -41,8 +41,11 @@ img {
 .lobster {
   font-family: 'Lobster', cursive;
 }
-.impact {
-  font-family: Impact, fantasy;
+.anton {
+  font-family: 'Anton', sans-serif;
+}
+.teko {
+  font-family: 'Teko', sans-serif;
 }
 
 /* Spacing */

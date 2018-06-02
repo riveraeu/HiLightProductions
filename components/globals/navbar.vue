@@ -5,7 +5,7 @@
       <v-toolbar-items class="ml-0">
         <v-btn flat to="/" color="grey">
           <v-icon >highlight</v-icon>
-          <v-toolbar-title class="impact primary--text">Hi Light Productions</v-toolbar-title>
+          <v-toolbar-title class="anton primary--text">Hi Light Productions</v-toolbar-title>
         </v-btn>
       </v-toolbar-items>
       <v-spacer/></v-spacer>

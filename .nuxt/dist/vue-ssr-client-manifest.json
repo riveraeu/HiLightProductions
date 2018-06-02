@@ -1,9 +1,9 @@
 {
   "publicPath": "/_nuxt/",
   "all": [
-    "pages/about.2b1e65af5c8fb03b18c8.js",
-    "pages/index.451e862721be39ccf9de.js",
-    "layouts/default.691c74b850a4021f8225.js",
+    "pages/about.eeb7046a397d21bcee45.js",
+    "pages/index.6c086ad505b3a39e3ad8.js",
+    "layouts/default.23c53b69805e7d498877.js",
     "pages/lights/contact.8b97ef5ebb0d9d75c8f9.js",
     "pages/lights/rentals/cart.50354011cac5c400b20a.js",
     "pages/events-productions/_focus.e5612d09a69d2493ef8d.js",
@@ -11,21 +11,21 @@
     "pages/lights/rentals/store.36d56443bb708542fefd.js",
     "pages/lights/services.e592524412769a85c8ff.js",
     "vendor.17e83576d112e361db20.js",
-    "app.dd0f743ede6a34fe7733.js",
-    "manifest.51efc79e50c15df94de7.js",
+    "app.4e35dcdcffcc87d42004.js",
+    "manifest.de2b063935645d9e9f7c.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.51efc79e50c15df94de7.js",
+    "manifest.de2b063935645d9e9f7c.js",
     "vendor.17e83576d112e361db20.js",
-    "app.dd0f743ede6a34fe7733.js"
+    "app.4e35dcdcffcc87d42004.js"
   ],
   "async": [
-    "pages/about.2b1e65af5c8fb03b18c8.js",
-    "pages/index.451e862721be39ccf9de.js",
-    "layouts/default.691c74b850a4021f8225.js",
+    "pages/about.eeb7046a397d21bcee45.js",
+    "pages/index.6c086ad505b3a39e3ad8.js",
+    "layouts/default.23c53b69805e7d498877.js",
     "pages/lights/contact.8b97ef5ebb0d9d75c8f9.js",
     "pages/lights/rentals/cart.50354011cac5c400b20a.js",
     "pages/events-productions/_focus.e5612d09a69d2493ef8d.js",

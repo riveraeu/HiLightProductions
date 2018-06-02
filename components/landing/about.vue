@@ -2,7 +2,7 @@
   <v-container class="mt-5" fluid>
     <v-layout row wrap>
       <v-flex class="vertical-align-2" md6 text-xs-center>
-        <v-icon x-large>highlight</v-icon><span class="impact primary--text display-2">Hi Light Productions</span>
+        <v-icon x-large>highlight</v-icon><span class="anton primary--text display-2">Hi Light Productions</span>
       </v-flex>
       <v-flex md6 text-xs-center >
         <p class="primary--text center lato display-3 mt-5">About</p>

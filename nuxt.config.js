@@ -12,9 +12,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lobster'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Abril+Fatface'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons|Lobster|Abril+Fatface|Anton' },
+
     ]
   },
   plugins: ['~/plugins/vuetify.js', '~/plugins/lightbox.js'],
