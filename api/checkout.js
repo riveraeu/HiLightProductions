@@ -16,19 +16,30 @@ router.post('/', (req, res, next) => {
   Object.setPrototypeOf(res, app.response)
   req.res = res
   res.req = req
-  const output = `
-    <h1>You have a new contact message</h1>
+  var output = `
+    <h1>You have a new rental Request</h1>
     <h3>Contact Details</h3>
     <ul>
       <li>Name: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
       <li>Phone: ${req.body.phone}</li>
     </ul>
-    <h3>Options</h3>
-    <p>${req.body.options}</p>
-    <h3>Message</h3>
-    <p>${req.body.message}</p>
+    <h3>Products</h3>
+    <ul>
   `
+  for (var product in req.body.cart) {
+    output += `<li> <img src="${req.body.cart[product].image}" width="100" height="100">
+    <p>${req.body.cart[product].title}</p>
+    <p>Quantity: ${req.body.cart[product].count}</p>
+    <p>Price: ${req.body.cart[product].price}</p>`
+  }
+  output += `
+  </ul>
+  <h3>Total</h3>
+    <p>Number of Items: ${req.body.cartTotal}</p>
+    <p>Total Price: ${req.body.totalCost}</p>
+  `
+
 
   let transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
@@ -53,12 +64,12 @@ router.post('/', (req, res, next) => {
       return console.log(error)
     }
     else {
-      res.send('Email sent!')
+      res.send('Request sent!')
     }
   })
 })
 
 module.exports = {
-    path: '/api/mail',
+    path: '/api/checkout',
     handler: router
 }

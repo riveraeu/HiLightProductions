@@ -2,7 +2,7 @@
   <v-container grid-list-md>
     <v-layout justify-center text-sm-center row>
       <v-flex sm8>
-        <p class="primary--text lato line display-3 mt-5">Events and Productions</p>
+        <p class="primary--text center lato line display-3 mt-5">Events and Productions</p>
         <p class="body-text mar-left mar-right">{{text}}</p>
       </v-flex>
     </v-layout>

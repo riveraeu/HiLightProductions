@@ -18,4 +18,9 @@ export default {
 .line{
   border-bottom: 2px solid grey;
 }
+@media (max-width:600px) {
+  .heading {
+    padding: 25px 5% 25px 5%;
+  }
+}
 </style>

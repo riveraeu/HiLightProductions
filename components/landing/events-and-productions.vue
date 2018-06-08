@@ -2,9 +2,9 @@
   <v-container class="mt-5" fluid>
     <v-layout row wrap>
       <v-flex md6 text-xs-center >
-        <p class="primary--text center lato display-3 mt-5">Events & Productions</p>
+        <p class="primary--text center lato display-2 mt-5">Events & Productions</p>
         <div class="body-text mar-left mar-right"> {{ text }}</div>
-        <!-- <v-btn class="mt-5 mb-5" color="orange" dark to="/events-productions/gallery">View more</v-btn> -->
+        <v-btn class="mt-5 mb-5" to="/events-productions/gallery">View more</v-btn>
       </v-flex>
       <v-flex md6>
         <img src="/images/heathers0.jpg" alt="Heathers Production">

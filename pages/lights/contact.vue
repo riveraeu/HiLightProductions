@@ -15,7 +15,7 @@
      </v-flex>
      <v-flex sm2 class="ml-5">
        <div class="body-text mb-3">Check the boxes below if you would like any addition services.</div>
-       <v-checkbox label="lights" v-model="options" color="grey" value="lights" hide-details></v-checkbox>
+       <v-checkbox label="sound" v-model="options" color="grey" value="lights" hide-details></v-checkbox>
        <v-checkbox label="camera" v-model="options" color="secondary" value="camera" hide-details></v-checkbox>
        <v-checkbox label="action" v-model="options" color="primary" value="action" hide-details></v-checkbox>
      </v-flex>
@@ -24,7 +24,7 @@
      </v-flex>
    </v-layout>
    <v-layout justify-center row wrap>
-      <v-flex sm1>
+      <v-flex xs4>
         <v-btn :disabled="!valid" color="primary" @click="sendMail()">Send</v-btn>
       </v-flex>
       <v-snackbar :timeout=3000 v-model="snackbar">{{responseMessage}}</v-snackbar>
@@ -56,7 +56,7 @@ export default {
     ],
     message: '',
     options: [
-      'lights', 'camera', 'action'
+      'sound', 'camera', 'action'
     ],
     snackbar: false,
     responseMessage: ''

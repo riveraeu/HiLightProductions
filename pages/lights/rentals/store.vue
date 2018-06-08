@@ -5,7 +5,7 @@
         <heading header="Rentals" subHeader="We offer packages to fit your event size, and individual lights"/>
       </v-flex>
     </v-layout>
-    <v-layout row wrap>
+    <v-layout row wrap justify-center>
       <v-flex v-for="product in products" :key="product._id" sm4>
         <product-item :product="product"></product-item>
       </v-flex>

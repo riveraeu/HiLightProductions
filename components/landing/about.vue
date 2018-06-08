@@ -5,9 +5,9 @@
         <v-icon x-large>highlight</v-icon><span class="anton primary--text display-2">Hi Light Productions</span>
       </v-flex>
       <v-flex md6 text-xs-center >
-        <p class="primary--text center lato display-3 mt-5">About</p>
+        <p class="primary--text center lato display-2 mt-5">About</p>
         <div class="body-text mar-left mar-right"> {{ about }}</div>
-        <!-- <v-btn class="mt-5" color="orange" dark to="/about">Read More</v-btn> -->
+        <v-btn class="mt-5" to="/about">Read More</v-btn>
       </v-flex>
     </v-layout>
   </v-container>

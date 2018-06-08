@@ -38,7 +38,8 @@ module.exports = {
   serverMiddleware: [
     '~/api/gallery',
     '~/api/focus',
-    '~/api/mail'
+    '~/api/mail',
+    '~/api/checkout'
   ],
   axios: {
     // proxyHeaders: false
