@@ -5,9 +5,7 @@
       <card icon="/images/lights/full-service/planning.svg" title="Planning" text="This is the first set in the lighting design process. Our expert lighting designer will sit down with you and help to plan the perfect event. From theater productions to parties, we have the knowlege and products to wow your guests."/>
       <card icon="/images/lights/full-service/set-up.svg" title="Set Up" text="The next step in this process is the set up. The profesionals at Hi Light will be there to set up for the event and make sure is working smoothly. You dont have to worry with Hi Light, we are here for you."/>
       <card icon="/images/lights/full-service/enjoy.svg" title="Enjoy" text="This is it, the day of the event is here. Now its time to enjoy the lights! Everything will be set up perfectly and we will be there handling all the lights. Your event will be the talk of the town when you."/>
-      <v-flex xs5>
-        <v-btn class="mb-5 mt-5" color="primary" to="/lights/contact">Full Service</v-btn>
-      </v-flex>
+      <v-btn class="mb-5 mt-5" color="primary" to="/lights/contact">Full Service</v-btn>
     </v-layout>
     <v-divider></v-divider>
     <p class="primary--text center abril display-2 mt-5">Consultation</p>
@@ -32,9 +30,7 @@
       </v-flex>
     </v-layout>
     <v-layout row wrap justify-center text-sm-center>
-      <v-flex xs5>
-        <v-btn class=" mb-5" color="primary" to="/lights/contact">Consultation</v-btn>
-      </v-flex>
+      <v-btn class="mt-5 mb-5" color="primary" to="/lights/contact">Consultation</v-btn>
     </v-layout>
     <v-divider></v-divider>
     <p class="primary--text center abril display-2 mt-5">Rentals</p>
@@ -42,9 +38,7 @@
       <card icon="/images/lights/rentals/cart.svg" title="Shopping" text="Browse our selection of event lights and packages. Packages are perfect for a standard get together, or you can rent indivudial lights for unique ocasions. Once you have chosen your lights, your request will be sent in for approval."/>
       <card icon="/images/lights/rentals/warehouse.svg" title="Pick Up" text="We work hard to approve your request quickly. Once you have been approved you can pick up the lights from our facsiliate, or we may be able to drop off and pick up the lights from your event. Just let us know what works for you."/>
       <card icon="/images/lights/rentals/list.svg" title="Return" text="Once your event is over, you will have x number of days to return the lights to our warehouse. The client is responsible for any damage to the lights. We may even be able to pick up the lights for you."/>
-      <v-flex xs3>
-        <v-btn class="mb-5 mt-5" color="primary" to="/lights/rentals/store">Rentals</v-btn>
-      </v-flex>
+      <v-btn class="mb-5 mt-5" color="primary" to="/lights/rentals/store">Rentals</v-btn>
     </v-layout>
   </v-container>
 </template>
