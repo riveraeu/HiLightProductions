@@ -22,9 +22,6 @@ router.use((req, res) => {
   var data = {}
   cloudinary.v2.api.resources_by_tag("gallery", {context: true},
     function(error, result){
-      result.resources.forEach(function(image) {
-        image.secure_url = image.secure_url.substr(0, 60) + "/q_auto" + image.secure_url.substr(60);
-      })
       res.send(result)
     }
   )
