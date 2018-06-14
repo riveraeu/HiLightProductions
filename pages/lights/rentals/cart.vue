@@ -10,15 +10,15 @@
         <p class="center">Your cart is empty</p>
       </v-flex>
     </v-layout>
-    <div class="cart-row mt-5" v-for="product in cart" :key="product._id">
+    <div class="cart-row mt-5" v-for="product in cart" :key="product.context.custom.title">
       <v-layout justify-center row wrap>
         <v-flex xs2>
-          <img :src="product.image" alt="">
+          <img :src="product.secure_url" alt="">
         </v-flex>
         <v-flex class="grey--text text--darken-1 title ml-5" sm4>
-          <p>Item: <span class="body-text">{{ product.title }}</span></p>
-          <p>Quantity: <span class="body-text">{{ product.count }}</span></p>
-          <p>Price: <span class="body-text">${{ product.price }} per day</span></p>
+          <p>Item: <span class="body-text">{{ product.context.custom.title }}</span></p>
+          <p>Quantity: <span class="body-text">{{ product.context.custom.count }}</span></p>
+          <p>Price: <span class="body-text">${{ product.context.custom.price }} per day</span></p>
           <v-btn @click="removeItem(product)">Remove Item</v-btn>
         </v-flex>
       </v-layout>
@@ -79,7 +79,7 @@ export default {
     },
     totalCost () {
       return Object.values(this.cart)
-        .reduce((sum, el) => sum + (el.count * el.price), 0)
+        .reduce((sum, el) => sum + (el.context.custom.count * el.context.custom.price), 0)
         .toFixed(2)
     }
   },

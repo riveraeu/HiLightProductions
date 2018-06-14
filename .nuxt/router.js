@@ -5,6 +5,7 @@ Vue.use(Router)
 
 const _58e6834a = () => import('../pages/about.vue' /* webpackChunkName: "pages/about" */).then(m => m.default || m)
 const _4990c9de = () => import('../pages/lights/services.vue' /* webpackChunkName: "pages/lights/services" */).then(m => m.default || m)
+const _2b178896 = () => import('../pages/lights/contact-consultation.vue' /* webpackChunkName: "pages/lights/contact-consultation" */).then(m => m.default || m)
 const _9f6090ea = () => import('../pages/events-productions/gallery.vue' /* webpackChunkName: "pages/events-productions/gallery" */).then(m => m.default || m)
 const _efb3f860 = () => import('../pages/lights/contact.vue' /* webpackChunkName: "pages/lights/contact" */).then(m => m.default || m)
 const _11ef3c40 = () => import('../pages/lights/rentals/cart.vue' /* webpackChunkName: "pages/lights/rentals/cart" */).then(m => m.default || m)
@@ -68,6 +69,11 @@ export function createRouter () {
 			path: "/lights/services",
 			component: _4990c9de,
 			name: "lights-services"
+		},
+		{
+			path: "/lights/contact-consultation",
+			component: _2b178896,
+			name: "lights-contact-consultation"
 		},
 		{
 			path: "/events-productions/gallery",

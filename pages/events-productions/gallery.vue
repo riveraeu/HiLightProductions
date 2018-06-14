@@ -28,15 +28,6 @@ export default {
   async asyncData ({ app }) {
     const res = await app.$axios.$get('api/gallery')
     return {gallery: res.resources}
-    /*
-    return axios.get('http://localhost:3000/api/gallery')
-      .then((res) => {
-        return {gallery: res.data.resources}
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-    */
   }
 }
 </script>

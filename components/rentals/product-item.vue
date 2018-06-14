@@ -1,15 +1,15 @@
 <template>
   <v-card>
-   <v-card-media :src="product.image" height="30vh" contain>
+   <v-card-media :src="product.secure_url" height="30vh" contain>
    </v-card-media>
    <v-card-title primary-title>
      <div>
-       <h3 class="grey--text text--darken-1"> {{ product.title }}</h3>
-       <p class="body-text" v-html="product.description"></p>
+       <h3 class="grey--text text--darken-1"> {{ product.context.custom.title }}</h3>
+       <p class="body-text" v-html="product.context.custom.description"></p>
      </div>
    </v-card-title>
    <v-card-actions>
-     <v-btn color="primary" @click="addToCart(product)">${{product.price}} per day - Add to Cart</v-btn>
+     <v-btn color="primary" @click="addToCart(product)">${{product.context.custom.price}} per day - Add to Cart</v-btn>
    </v-card-actions>
    <v-snackbar :timeout=3000 v-model="snackbar">
       Item added to cart

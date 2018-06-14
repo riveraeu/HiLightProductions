@@ -30,7 +30,7 @@
       </v-flex>
     </v-layout>
     <v-layout row wrap justify-center text-sm-center>
-      <v-btn class="mt-5 mb-5" color="primary" to="/lights/contact">Consultation</v-btn>
+      <v-btn class="mt-5 mb-5" color="primary" to="/lights/contact-consultation">Consultation</v-btn>
     </v-layout>
     <v-divider></v-divider>
     <p class="primary--text center abril display-2 mt-5">Rentals</p>

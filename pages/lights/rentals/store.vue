@@ -21,13 +21,17 @@ export default {
     productItem,
     heading
   },
-  computed: {
-    products () {
-      return this.$store.state.rentals.products
+  data () {
+    return {
+      products: []
     }
   },
   mounted () {
     this.$store.dispatch('rentals/showCart')
+  },
+  async asyncData ({ app }) {
+    const res = await app.$axios.$get('api/rentals')
+    return {products: res.resources}
   }
 }
 </script>

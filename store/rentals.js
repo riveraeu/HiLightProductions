@@ -1,30 +1,25 @@
 import Vue from 'vue'
-import products from '../static/store.js'
 
 export const state = () => ({
   cartTotal: 0,
   showCart: false,
-  cart: {},
-  products: products.products
+  cart: {}
 })
 
 export const mutations = {
-  setProducts (state, products) {
-    state.products = products
-  },
   addToCart (state, item) {
     state.cartTotal++
-    if (item.title in state.cart) {
-      state.cart[item.title].count++
+    if (item.context.custom.title in state.cart) {
+      state.cart[item.context.custom.title].context.custom.count++
     } else {
       let stateItem = Object.assign({}, item)
-      stateItem.count = 1
-      state.cart[item.title] = stateItem
+      stateItem.context.custom.count = 1
+      state.cart[item.context.custom.title] = stateItem
     }
   },
   removeItem (state, item) {
-    state.cartTotal -= item.count
-    Vue.delete(state.cart, item.title)
+    state.cartTotal -= item.context.custom.count
+    Vue.delete(state.cart, item.context.custom.title)
   },
   showCart (state) {
     if (!state.showCart) {

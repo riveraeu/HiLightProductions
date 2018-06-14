@@ -37,6 +37,7 @@ module.exports = {
   },
   serverMiddleware: [
     '~/api/gallery',
+    '~/api/rentals',
     '~/api/focus',
     '~/api/mail',
     '~/api/checkout'
