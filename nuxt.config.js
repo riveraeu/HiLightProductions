@@ -46,6 +46,6 @@ module.exports = {
     // proxyHeaders: false
     baseURL: process.env.BASE_URL,
     browserBaseURL: process.env.BASE_URL,
-    credentials: false
+    https: true
   }
 }

@@ -91,7 +91,7 @@ img {
 /* responsive */
 @media (max-width: 600px) {
   .display-3 {
-    font-size: 45px !important;
+    font-size: 38px !important;
   }
   .display-2 {
     font-size: 34px !important;
