@@ -32,18 +32,14 @@ router.post('/', (req, res, next) => {
 
   let transporter = nodemailer.createTransport({
     host: 'smtp.office365.com',
-    port: 465,
-    secure: true,
+    port: 587,
+    secure: false,
     auth: {
       user: process.env.EMAIL_USERNAME,
       pass: process.env.EMAIL_PASSWORD
-    }
-  })
-  transporter.verify(function(error, success) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Server is ready to take our messages');
+    },
+    tls: {
+      rejectUnauthorized: false
     }
   })
   let mailOptions = {
