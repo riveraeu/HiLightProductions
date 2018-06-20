@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _0a6c42a8 = () => import('../pages/Acknowledgement.vue' /* webpackChunkName: "pages/Acknowledgement" */).then(m => m.default || m)
 const _58e6834a = () => import('../pages/about.vue' /* webpackChunkName: "pages/about" */).then(m => m.default || m)
 const _4990c9de = () => import('../pages/lights/services.vue' /* webpackChunkName: "pages/lights/services" */).then(m => m.default || m)
 const _2b178896 = () => import('../pages/lights/contact-consultation.vue' /* webpackChunkName: "pages/lights/contact-consultation" */).then(m => m.default || m)
@@ -60,6 +61,11 @@ export function createRouter () {
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
     routes: [
+		{
+			path: "/Acknowledgement",
+			component: _0a6c42a8,
+			name: "Acknowledgement"
+		},
 		{
 			path: "/about",
 			component: _58e6834a,

@@ -31,28 +31,31 @@ router.post('/', (req, res, next) => {
   `
 
   let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 587,
-      secure: false,
-      auth: {
-          user: process.env.GMAIL_USERNAME,
-          pass: process.env.GMAIL_PASSWORD
-      },
-      tls: {
-        rejectUnauthorized: false
-      }
+    host: 'smtp.office365.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.EMAIL_USERNAME,
+      pass: process.env.EMAIL_PASSWORD
+    }
+  })
+  transporter.verify(function(error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Server is ready to take our messages');
+    }
   })
   let mailOptions = {
-      from: process.env.GMAIL_USERNAME,
-      to: [process.env.GMAIL_USERNAME, req.body.email],
-      subject: 'Message from HiLightProductions.com',
-      html: output
+    from: process.env.EMAIL_USERNAME,
+    to: [process.env.EMAIL_USERNAME, req.body.email],
+    subject: 'Message from HiLightProductions.com',
+    html: output
   }
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error)
-    }
-    else {
+    } else {
       res.send('Email sent!')
     }
   })
