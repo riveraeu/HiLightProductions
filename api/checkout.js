@@ -40,22 +40,21 @@ router.post('/', (req, res, next) => {
     <p>Total Price: ${req.body.totalCost}</p>
   `
 
-
   let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 587,
-      secure: false,
-      auth: {
-          user: process.env.GMAIL_USERNAME,
-          pass: process.env.GMAIL_PASSWORD
-      },
-      tls: {
-        rejectUnauthorized: false
-      }
+    host: 'smtp.office365.com',
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.EMAIL_USERNAME,
+      pass: process.env.EMAIL_PASSWORD
+    },
+    tls: {
+      rejectUnauthorized: false
+    }
   })
   let mailOptions = {
-      from: process.env.GMAIL_USERNAME,
-      to: [process.env.GMAIL_USERNAME, req.body.email],
+      from: process.env.EMAIL_USERNAME,
+      to: [process.env.EMAIL_USERNAME, req.body.email],
       subject: 'Message from HiLightProductions.com',
       html: output
   }
