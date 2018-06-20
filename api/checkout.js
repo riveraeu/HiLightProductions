@@ -28,10 +28,10 @@ router.post('/', (req, res, next) => {
     <ul>
   `
   for (var product in req.body.cart) {
-    output += `<li> <img src="${req.body.cart[product].image}" width="100" height="100">
-    <p>${req.body.cart[product].title}</p>
-    <p>Quantity: ${req.body.cart[product].count}</p>
-    <p>Price: ${req.body.cart[product].price}</p>`
+    output += `<li> <img src="${req.body.cart[product].secure_url}" width="100" height="100">
+    <p>${req.body.cart[product].context.custom.title}</p>
+    <p>Quantity: ${req.body.cart[product].context.custom.count}</p>
+    <p>Price: ${req.body.cart[product].context.custom.price}</p>`
   }
   output += `
   </ul>
