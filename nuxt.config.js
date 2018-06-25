@@ -1,6 +1,3 @@
-var dotenv = require('dotenv');
-dotenv.load();
-
 module.exports = {
   // Headers of the page
   head: {

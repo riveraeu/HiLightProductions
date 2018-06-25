@@ -1,10 +1,6 @@
 const express = require('express')
 const cloudinary = require('cloudinary')
 
-// For development, take out when deploying
-var dotenv = require('dotenv');
-dotenv.load();
-
 const app = express()
 const router = express.Router()
 
