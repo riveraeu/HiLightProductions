@@ -2,7 +2,7 @@
   "publicPath": "/_nuxt/",
   "all": [
     "pages/events-productions/gallery.606609f5de6c2f674f98.js",
-    "pages/index.32690fe20e25771123fe.js",
+    "pages/index.f0fe63c83da90d8e1eea.js",
     "layouts/default.4bff5cf54091ccfcae09.js",
     "pages/lights/contact.7280099648db7106fb3f.js",
     "pages/lights/contact-consultation.14887192d1688e238cdf.js",
@@ -14,19 +14,19 @@
     "pages/Acknowledgement.b1f7a3152bfc4eb773e2.js",
     "vendor.e50c6b683b2e4904ae85.js",
     "app.bb256afeedfc60cb0404.js",
-    "manifest.4a71e086f84dec3075ea.js",
+    "manifest.3528cf9daf4f38e310e3.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.4a71e086f84dec3075ea.js",
+    "manifest.3528cf9daf4f38e310e3.js",
     "vendor.e50c6b683b2e4904ae85.js",
     "app.bb256afeedfc60cb0404.js"
   ],
   "async": [
     "pages/events-productions/gallery.606609f5de6c2f674f98.js",
-    "pages/index.32690fe20e25771123fe.js",
+    "pages/index.f0fe63c83da90d8e1eea.js",
     "layouts/default.4bff5cf54091ccfcae09.js",
     "pages/lights/contact.7280099648db7106fb3f.js",
     "pages/lights/contact-consultation.14887192d1688e238cdf.js",

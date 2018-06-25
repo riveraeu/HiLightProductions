@@ -14,7 +14,7 @@
 
 <style scoped>
 .jumbotron {
-  height: 80vh !important;
+  height: 90vh !important;
 }
 
 </style>
