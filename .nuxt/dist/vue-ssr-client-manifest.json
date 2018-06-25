@@ -13,16 +13,16 @@
     "pages/about.a8e3e631147677b08fd5.js",
     "pages/Acknowledgement.b1f7a3152bfc4eb773e2.js",
     "vendor.e50c6b683b2e4904ae85.js",
-    "app.bb256afeedfc60cb0404.js",
-    "manifest.3528cf9daf4f38e310e3.js",
+    "app.4791ee9fce2bb53f8301.js",
+    "manifest.188f52b4b8f440e36612.js",
     "LICENSES",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.3528cf9daf4f38e310e3.js",
+    "manifest.188f52b4b8f440e36612.js",
     "vendor.e50c6b683b2e4904ae85.js",
-    "app.bb256afeedfc60cb0404.js"
+    "app.4791ee9fce2bb53f8301.js"
   ],
   "async": [
     "pages/events-productions/gallery.606609f5de6c2f674f98.js",
