@@ -20,7 +20,7 @@ export default {
     heading
   },
   data: () => ({
-    text: 'Hashtag helvetica celiac, occupy squid enamel pin vexillologist cardigan poutine taxidermy irony mixtape kitsch cold-pressed. Cornhole pour-over vegan, hoodie humblebrag kombucha disrupt organic typewriter. Fixie yr vaporware irony hella trust fund cred kombucha tilde post-ironic. Cornhole pour-over vegan, hoodie humblebrag kombucha disrupt organic typewriter. Cornhole pour-over vegan, hoodie humblebrag kombucha disrupt organic typewriter.',
+    text: 'Here you can see some of the productions and events HiLight has already helped come alive. Ranging from shows and stages all around the Bay Area. Get inspired for your next event and see how HiLight and can help you!',
     images: [
       { title: 'Heathers', src: '/images/events-productions/heathers/main.jpg', id: 1 }
     ]
